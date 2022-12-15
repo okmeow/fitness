@@ -1,0 +1,52 @@
+.abonnement-card {
+  padding: 68px 77px;
+  background-color: #ffffff;
+  width: 360px;
+  text-align: center;
+}
+
+.abonnement-card__title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 29px;
+  margin: 0 0 22px 0;
+}
+
+.abonnement-card__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 96px 0;
+  color: #495a7d;
+}
+
+.abonnement-card__price {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 90px;
+  color: #103aae;
+}
+
+.abonnement-card__rouble {
+  font-family: $ff-rouble;
+  color: #102654;
+}
+
+.abonnement-card__link {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 27px 44px;
+  border: 2px solid #102654;
+  text-transform: uppercase;
+}
+
+.abonnement-card:hover .abonnement-card__link {
+  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  color: #ffffff;
+  border: none;
+}
+
+.abonnement-card:hover .abonnement-card__link:hover {
+  color: #cacaca;
+}

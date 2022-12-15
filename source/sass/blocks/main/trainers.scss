@@ -1,0 +1,113 @@
+.trainers {
+  width: 100vw;
+  min-width: $vp-1200;
+}
+
+.trainers__wrapper {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 20px 103px 90px 103px;
+}
+
+.trainers__title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+}
+
+.trainers__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.trainers__item {
+  width: 260px;
+  min-height: 200px;
+  height: 294px;
+  position: relative;
+  background-color: #263b65;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.trainers__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.trainers__item--1 {
+  background-image: url("../img/trainer-1.jpg");
+}
+
+.trainers__item--2 {
+  background-image: url("../img/trainer-2.jpg");
+}
+
+.trainers__item--3 {
+  background-image: url("../img/trainer-3.jpg");
+}
+
+.trainers__item--4 {
+  background-image: url("../img/trainer-4.jpg");
+}
+
+.trainers__name {
+  margin: 0;
+  position: absolute;
+  top: 80%;
+  left: 25%;
+  color: #ffffff;
+}
+
+.trainers__extra {
+  display: none;
+  width: 260px;
+  min-height: 200px;
+  height: 294px;
+  padding: 58px 55px 58px 46px;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.trainers__item:hover .trainers__extra {
+  display: block;
+  background-color: rgba(16, 38, 84, 0.89);
+  color: #ffffff;
+}
+
+.trainers__item:hover .trainers__name {
+  display: none;
+}
+
+.trainers__extra-name {
+  margin: 0 0 2px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.trainers__extra-speciality {
+  margin: 0 0 45px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #b6bdcc;
+}
+
+.trainers__extra-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.trainers__extra-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+}

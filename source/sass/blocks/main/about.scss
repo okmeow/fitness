@@ -1,0 +1,40 @@
+.about {
+  width: 100vw;
+  min-width: $vp-1200;
+}
+
+.about__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 51px 122px 51px 122px;
+}
+
+.about__text-wrapper {
+  max-width: 355px;
+}
+
+.about__text-wrapper h2 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  margin: 0 0 25px 0;
+}
+
+.about__text-wrapper p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0 0 55px 0;
+}
+
+.about__text-wrapper p:last-child {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+}

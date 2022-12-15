@@ -1,0 +1,80 @@
+.abonnements {
+  width: 100vw;
+  min-width: $vp-1200;
+  background-color: #f8f9fc;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../img/abonnements-background.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 270px;
+    height: 410px;
+    position: absolute;
+    top: 65%;
+    left: calc(100vw - 270px);
+  }
+}
+
+.abonnements__wrapper {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 120px 103px 120px 103px;
+}
+
+.abonnements h2 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  margin: 0 0 25px 0;
+  text-align: center;
+}
+
+.abonnements__radio-list {
+  list-style-type: none;
+  margin: 0 0 40px 400px;
+  padding: 0;
+  display: flex;
+}
+
+.abonnements__radio-item:not(:last-child) {
+  margin: 0 46px 0 0;
+}
+
+.abonnements__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgba(16, 38, 84, 0.5);
+  padding: 0 0 10px 0;
+}
+
+input:checked ~ .abonnements__text {
+  color: #102654;
+  border-bottom: 2px solid #d10a42;
+}
+
+.abonnements__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.abonnements__item {
+  margin: 0 40px 0 0;
+  z-index: 2;
+}
+
+.abonnements__item:last-child {
+  margin-right: 0;
+}
+
+.abonnements__list .abonnements__item:nth-child(3n) {
+  margin-right: 0;
+}

@@ -1,0 +1,21 @@
+.header {
+  width: 100vw;
+  min-width: $vp-1200;
+  position: absolute;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 103px 10px 103px;
+  justify-content: space-between;
+}
+
+.header__phone-link {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+}
