@@ -1,0 +1,30 @@
+.footer-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  justify-content: space-between;
+}
+
+.footer-navigation__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  max-width: 600px;
+}
+
+.footer-navigation__item a {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.footer-navigation__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.footer-navigation img {
+  margin-top: 10px;
+}

@@ -1,7 +1,5 @@
 .contacts-form {
   width: 50%;
-  display: inline-block;
-  vertical-align: baseline;
 }
 
 .contacts-form__wrapper {
@@ -9,11 +7,38 @@
   background-color: #102654;
 }
 
-.contacts-form__wrapper p {
+.contacts-form__wrapper h2 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
   color: #ffffff;
   font-weight: 800;
   font-size: 54px;
   line-height: 84px;
   letter-spacing: 0.03em;
+  margin: 0;
 }
 
+.contacts-form__wrapper fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.contacts-form__wrapper input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #74819c;
+  width: 190px;
+}
+
+.contacts-form__wrapper button {
+  grid-column: 1 / -1;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  background-color: transparent;
+  padding: 10px 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+}

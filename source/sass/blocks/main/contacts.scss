@@ -1,5 +1,77 @@
 .contacts {
-  width: 49.7%;
-  display: inline-block;
-  vertical-align: baseline;
+  width: 50%;
+}
+
+.contacts__wrapper {
+  padding: 56px 159px 70px 120px;
+  border-top: 1px solid #74819c;
+}
+
+.contacts__title {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 65px;
+  letter-spacing: 0.03em;
+  margin: 0;
+}
+
+.contacts__list {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 60px;
+}
+
+.contacts__definition {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.contacts__term {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contacts__term--address {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.contacts__definition--address {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.contacts__term--schedule {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+}
+
+.contacts__definition--schedule {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+
+.contacts__term--phone {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.contacts__definition--phone {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.contacts__term--email {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.contacts__definition--email {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
 }
