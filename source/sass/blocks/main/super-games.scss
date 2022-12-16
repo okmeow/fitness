@@ -1,6 +1,10 @@
 .super-games {
   width: 100vw;
   min-width: $vp-1200;
+
+  @media (max-width: $vp-1199) {
+    min-width: 768px;
+  }
 }
 
 .super-games__wrapper {
@@ -10,6 +14,10 @@
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 120px 103px 90px 103px;
+
+  @media (max-width: $vp-1199) {
+    padding: 100px 45px 50px 45px;
+  }
 }
 
 .super-games__text-container {
@@ -20,6 +28,11 @@
   padding: 85px 77px 80px 76px;
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: $vp-1199) {
+    padding: 51px 45px;
+    width: 292px;
+  }
 }
 
 .super-games__title {
@@ -30,14 +43,83 @@
   letter-spacing: 0.03em;
   max-width: 201px;
   margin: 0;
+
+  @media (max-width: $vp-1199) {
+    font-size: 48px;
+    line-height: 46px;
+    max-width: 117px;
+  }
 }
 
 .super-games__agenda {
   margin: 0;
 }
 
+.super-games__when {
+  font-size: 18px;
+  line-height: 27px;
+
+  @media (max-width: $vp-1199) {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.super-games__date {
+  margin: 0 0 10px 0;
+  display: inline-flex;
+  align-items: start;
+  border-top: 1px solid #ffffff;
+
+  @media (max-width: $vp-1199) {
+    margin: 0;
+  }
+}
+
+.super-games__day {
+  margin: 0 10px 0 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+
+  @media (max-width: $vp-1199) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.super-games__month {
+  margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+
+  @media (max-width: $vp-1199) {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+
+.super-games__time {
+  margin: 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 45px;
+
+  @media (max-width: $vp-1199) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
 .super-games__description {
   margin: 0 0 40px 0;
+  font-size: 18px;
+  line-height: 27px;
+
+  @media (max-width: $vp-1199) {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 
 .super-games__link {
@@ -50,29 +132,17 @@
   padding: 23px 110px;
   border: 4px solid #ffffff;
   align-self: center;
+
+  @media (max-width: $vp-1199) {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 16px 45px;
+  }
 }
 
-.super-games__date {
-  margin: 0 0 10px 0;
-  display: inline-flex;
-  align-items: start;
-  border-top: 1px solid #ffffff;
-}
-
-.super-games__day {
-  margin: 0 10px 0 0;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 45px;
-}
-
-.super-games__month {
-  margin: 0;
-}
-
-.super-games__time {
-  margin: 0;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 45px;
+.super-games__wrapper img {
+  @media (max-width: $vp-1199) {
+    width: 386px;
+    height: 292px;
+  }
 }

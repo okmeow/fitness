@@ -1,10 +1,19 @@
 .contacts {
   width: 50%;
+
+  @media (max-width: $vp-1199) {
+    width: 100%;
+  }
 }
 
 .contacts__wrapper {
   padding: 56px 159px 70px 120px;
   border-top: 1px solid #74819c;
+
+  @media (max-width: $vp-1199) {
+    border: none;
+    padding: 70px 133px;
+  }
 }
 
 .contacts__title {
@@ -13,7 +22,12 @@
   font-size: 54px;
   line-height: 65px;
   letter-spacing: 0.03em;
-  margin: 0;
+  margin: 0 0 40px 0;
+
+  @media (max-width: $vp-1199) {
+    font-size: 42px;
+    line-height: 50px;
+  }
 }
 
 .contacts__list {
@@ -28,12 +42,22 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+
+  @media (max-width: $vp-1199) {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 .contacts__term {
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
+
+  @media (max-width: $vp-1199) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .contacts__term--address {

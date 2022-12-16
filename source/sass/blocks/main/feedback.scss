@@ -1,6 +1,10 @@
 .feedback {
   width: 100vw;
   min-width: $vp-1200;
+
+  @media (max-width: $vp-1199) {
+    min-width: 768px;
+  }
 }
 
 .feedback__wrapper {
@@ -9,6 +13,10 @@
   margin: 0 auto;
   padding: 20px 103px 70px 103px;
   position: relative;
+
+  @media (max-width: $vp-1199) {
+    padding: 20px 101px 100px 101px;
+  }
 }
 
 .feedback__title {
@@ -19,6 +27,12 @@
   line-height: 65px;
   letter-spacing: 0.03em;
   margin: 0 0 55px 0;
+
+  @media (max-width: $vp-1199) {
+    font-size: 42px;
+    line-height: 50px;
+    margin: 0 0 50px 0;
+  }
 }
 
 .feedback__list {
@@ -37,10 +51,28 @@
   background-image: url("../img/feedback-avatar.png");
   background-repeat: no-repeat;
   background-position: 50px 100px;
+
+  @media (max-width: $vp-1199) {
+    width: 566px;
+  }
 }
 
 .feedback__item:first-child {
   display: block;
+}
+
+.feedback__name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 0 20px 0;
+}
+
+.feedback__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0 0 16px 0;
 }
 
 .feedback__button {

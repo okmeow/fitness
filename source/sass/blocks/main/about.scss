@@ -1,6 +1,10 @@
 .about {
   width: 100vw;
   min-width: $vp-1200;
+
+  @media (max-width: $vp-1199) {
+    min-width: 768px;
+  }
 }
 
 .about__wrapper {
@@ -11,10 +15,22 @@
   max-width: 1366px;
   margin: 0 auto;
   padding: 51px 122px 51px 122px;
+
+  @media (max-width: $vp-1199) {
+    padding: 100px 45px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 }
 
 .about__text-wrapper {
   max-width: 355px;
+
+  @media (max-width: $vp-1199) {
+    align-self: center;
+    text-align: center;
+    max-width: 502px;
+  }
 }
 
 .about__text-wrapper h2 {
@@ -33,8 +49,21 @@
   margin: 0 0 55px 0;
 }
 
+.about__additional-text {
+  @media (max-width: $vp-1199) {
+    display: none;
+  }
+}
+
 .about__text-wrapper p:last-child {
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
+}
+
+.about__wrapper img {
+  @media (max-width: $vp-1199) {
+    width: 678px;
+    height: 345px;
+  }
 }

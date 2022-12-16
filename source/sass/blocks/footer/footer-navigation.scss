@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   width: 800px;
   justify-content: space-between;
+
+  @media (max-width: $vp-1199) {
+    width: 550px;
+  }
 }
 
 .footer-navigation__list {
@@ -27,4 +31,8 @@
 
 .footer-navigation img {
   margin-top: 10px;
+
+  @media (max-width: $vp-1199) {
+    margin-top: 5px;
+  }
 }

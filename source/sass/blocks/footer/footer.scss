@@ -2,6 +2,10 @@
   width: 100vw;
   min-width: $vp-1200;
   background-color: #030a1a;
+
+  @media (max-width: $vp-1199) {
+    min-width: 768px;
+  }
 }
 
 .footer__wrapper {
@@ -11,6 +15,10 @@
   padding: 44px 104px 42px 103px;
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: $vp-1199) {
+    padding: 45px 39px 44px 45px;
+  }
 }
 
 .footer__social {

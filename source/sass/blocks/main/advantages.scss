@@ -2,6 +2,10 @@
   width: 100vw;
   min-width: $vp-1200;
   background-color: #f8f9fc;
+
+  @media (max-width: $vp-1199) {
+    min-width: 768px;
+  }
 }
 
 .advantages__wrapper {
@@ -9,6 +13,10 @@
   max-width: 1366px;
   margin: 0 auto;
   padding: 140px 163px 120px 163px;
+
+  @media (max-width: $vp-1199) {
+    padding: 100px 50px;
+  }
 }
 
 .advantages__title {
@@ -67,7 +75,7 @@
   font-weight: 700;
   font-size: 71px;
   line-height: 71px;
-  background-image: linear-gradient(142.51deg, #D10A42 0%, #0041CA 11.33%);
+  background-image: linear-gradient(142.51deg, #d10a42 0%, #0041ca 11.33%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   grid-column: 1 / 2;

@@ -1,8 +1,21 @@
 .abonnement-card {
-  padding: 68px 77px;
+  padding: 61px 70px;
   background-color: #ffffff;
   width: 360px;
   text-align: center;
+  border: 7px solid #ffffff;
+
+  &:hover {
+    border: 1px solid;
+    border-image-slice: 1;
+    border-width: 7px;
+    border-image-source: linear-gradient(135deg, #d10a42, #00359f);
+  }
+
+  @media (max-width: $vp-1199) {
+    padding: 61px 111px;
+    width: 442px;
+  }
 }
 
 .abonnement-card__title {
@@ -42,7 +55,7 @@
 }
 
 .abonnement-card:hover .abonnement-card__link {
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   color: #ffffff;
   border: none;
 }
