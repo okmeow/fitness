@@ -1,6 +1,9 @@
 const feedbackMessages = document.querySelectorAll('[data-feedback-item="data-feedback-item"]');
 const feedbackButtonNext = document.querySelector('[data-feedback-button-next="data-feedback-button-next"]');
 const feedbackButtonPrevious = document.querySelector('[data-feedback-button-previous="data-feedback-button-previous"]');
+const SWIPE_MIN_DISTANCE = 70;
+let startPoint;
+let moved = false;
 
 const buttonToggler = () => {
   if (feedbackMessages[0].classList.contains('feedback__item--active')) {
@@ -20,7 +23,7 @@ const nextSlideOn = function () {
   for (let i = 0; i < feedbackMessages.length - 1; i++) {
     if (feedbackMessages[i].classList.contains('feedback__item--active')) {
       feedbackMessages[i].classList.remove('feedback__item--active');
-      feedbackMessages[i+1].classList.add('feedback__item--active');
+      feedbackMessages[i + 1].classList.add('feedback__item--active');
       buttonToggler();
       return;
     }
@@ -31,15 +34,12 @@ const previousSlideOn = function () {
   for (let i = 1; i < feedbackMessages.length; i++) {
     if (feedbackMessages[i].classList.contains('feedback__item--active')) {
       feedbackMessages[i].classList.remove('feedback__item--active');
-      feedbackMessages[i-1].classList.add('feedback__item--active');
+      feedbackMessages[i - 1].classList.add('feedback__item--active');
       buttonToggler();
       return;
     }
   }
 };
-
-let startPoint;
-let moved = false;
 
 const defineTouch = (evt) => {
   evt.preventDefault();
@@ -47,22 +47,20 @@ const defineTouch = (evt) => {
 };
 
 const defineMove = (evt) => {
-  for (let i = 0; i < feedbackMessages.length; i++) {
-    if (moved) {
-      return;
-    }
+  if (moved) {
+    return;
+  }
 
-    evt.preventDefault();
+  evt.preventDefault();
 
-    if (evt.changedTouches[0].pageX > startPoint + feedbackMessages[i].offsetWidth / 2) {
-      previousSlideOn();
-      moved = true;
-    }
+  if (evt.changedTouches[0].pageX > startPoint + SWIPE_MIN_DISTANCE) {
+    previousSlideOn();
+    moved = true;
+  }
 
-    if (evt.changedTouches[0].pageX < startPoint - feedbackMessages[i].offsetWidth / 2) {
-      nextSlideOn();
-      moved = true;
-    }
+  if (evt.changedTouches[0].pageX < startPoint - SWIPE_MIN_DISTANCE) {
+    nextSlideOn();
+    moved = true;
   }
 };
 
