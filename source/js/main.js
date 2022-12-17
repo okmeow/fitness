@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {abonnementRadioButtonsHandler} from './modules/abonements-tabs.js';
 import {buttonVideoStartHandler} from './modules/video.js';
+import {feedbackHandler} from './modules/feedback-swiper.js';
 
 // ---------------------------------
 
@@ -17,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   abonnementRadioButtonsHandler();
   buttonVideoStartHandler();
+  feedbackHandler();
 
   window.addEventListener('load', () => {
     initModals();
