@@ -4,4 +4,8 @@
   @media (max-width: $vp-1199) {
     min-width: 768px;
   }
+
+  @media (max-width: $vp-767) {
+    min-width: 320px;
+  }
 }
