@@ -14,3 +14,15 @@
 .social__list .social__item:nth-child(3n) {
   margin-right: 0;
 }
+
+.social__item a {
+  color: #ffffff;
+
+  &:hover {
+    color: #a9c4ff;
+  }
+
+  &:active {
+    color: #6999ff;
+  }
+}

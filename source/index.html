@@ -172,6 +172,7 @@
             <a class="super-games__link" href="#">Заполнить заявку</a>
           </div>
           <picture>
+            <source media="(max-width: 767px)" srcset="img/mobile/super-games-man.jpg 1x, img/mobile/super-games-man@2x.jpg 2x">
             <!-- <source srcset="img/welcome-superman.webp 1x, img/welcome-supermans@2x.webp 2x" type="image/webp"> -->
             <img src="img/super-games-man.jpg" srcset="img/super-games-man@2x.jpg 2x" width="660" height="500" alt="Мужчина в процессе соревнований.">
           </picture>
@@ -269,7 +270,7 @@
       <section class="special-offers">
         <div class="special-offers__wrapper">
           <h2 class="special-offers__title">Акции</h2>
-          <ul class="specail-offers__list">
+          <ul class="special-offers__list">
             <li class="special-offers__item special-offers__item--sale">
               <div class="special-offers__sale">
                 <p class="special-offers__sale-name">Год</p>
@@ -278,6 +279,7 @@
                 <a class="special-offers__sale-link">Подробнее</a>
               </div>
               <picture>
+                <source media="(max-width: 767px)" srcset="img/mobile/special-offers-woman.jpg 1x, img/mobile/special-offers-woman@2x.jpg 2x">
                 <source media="(max-width: 1199px)" srcset="img/tablet/special-offers-woman.jpg 1x, img/tablet/special-offers-woman@2x.jpg 2x">
                 <!-- <source srcset="img/special-offers-woman.webp 1x, img/special-offers-woman@2x.webp 2x" type="image/webp"> -->
                 <img src="img/special-offers-woman.jpg" srcset="img/special-offers-woman@2x.jpg 2x" width="280" height="462" alt="Спортивная девушка.">
@@ -370,9 +372,11 @@
       <div class="footer__wrapper">
         <section class="footer__navigation footer-navigation">
           <h3 class="visually-hidden">Навигация по сайту</h3>
-          <a href="index.html">
-            <img src="img/logo-desktop.svg" width="88" height="32" alt="Логотип сайта.">
-          </a>
+          <div class="footer-navigation__link-wrapper">
+            <a href="index.html">
+              <img src="img/logo-desktop.svg" width="88" height="32" alt="Логотип сайта.">
+            </a>
+          </div>
           <ul class="footer-navigation__list">
             <li class="footer-navigation__item">
               <a href="#">Услуги</a>
@@ -380,6 +384,8 @@
             <li class="footer-navigation__item">
               <a href="#">Абонементы</a>
             </li>
+          </ul>
+          <ul class="footer-navigation__list">
             <li class="footer-navigation__item">
               <a href="#">Акции</a>
             </li>

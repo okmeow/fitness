@@ -6,6 +6,10 @@
   @media (max-width: $vp-1199) {
     min-width: 768px;
   }
+
+  @media (max-width: $vp-767) {
+    min-width: 320px;
+  }
 }
 
 .footer__wrapper {
@@ -19,8 +23,22 @@
   @media (max-width: $vp-1199) {
     padding: 45px 39px 44px 45px;
   }
+
+  @media (max-width: $vp-767) {
+    padding: 50px 60px 50px 15px;
+  }
 }
 
 .footer__social {
   margin-left: auto;
+
+  @media (max-width: $vp-767) {
+    margin-left: 0;
+  }
+}
+
+.footer__navigation {
+  @media (max-width: $vp-767) {
+    margin-bottom: 20px;
+  }
 }

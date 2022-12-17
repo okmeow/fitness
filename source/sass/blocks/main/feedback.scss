@@ -5,6 +5,10 @@
   @media (max-width: $vp-1199) {
     min-width: 768px;
   }
+
+  @media (max-width: $vp-767) {
+    min-width: 320px;
+  }
 }
 
 .feedback__wrapper {
@@ -16,6 +20,10 @@
 
   @media (max-width: $vp-1199) {
     padding: 20px 101px 100px 101px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 20px 47px 70px 47px;
   }
 }
 
@@ -32,6 +40,11 @@
     font-size: 42px;
     line-height: 50px;
     margin: 0 0 50px 0;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 32px;
+    line-height: 38px;
   }
 }
 
@@ -55,6 +68,13 @@
   @media (max-width: $vp-1199) {
     width: 566px;
   }
+
+  @media (max-width: $vp-767) {
+    width: 226px;
+    padding: 40px 25px 40px 25px;
+    background-size: 62px 62px;
+    background-position: 30px 40px;
+  }
 }
 
 .feedback__item:first-child {
@@ -66,13 +86,22 @@
   font-size: 20px;
   line-height: 30px;
   margin: 0 0 20px 0;
+
+  @media (max-width: $vp-767) {
+    margin: 0 0 20px 90px;
+    line-height: 26px;
+  }
 }
 
 .feedback__description {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  margin: 0 0 16px 0;
+  margin: 0;
+
+  @media (max-width: $vp-767) {
+    text-align: center;
+  }
 }
 
 .feedback__button {
@@ -101,10 +130,20 @@
   transform: rotate(45deg);
   top: 270px;
   left: 300px;
+
+  @media (max-width: $vp-767) {
+    top: 270px;
+    left: 20px;
+  }
 }
 
 .feedback__button--next {
   transform: rotate(225deg);
   top: 270px;
   left: 1050px;
+
+  @media (max-width: $vp-767) {
+    top: 270px;
+    left: 280px;
+  }
 }

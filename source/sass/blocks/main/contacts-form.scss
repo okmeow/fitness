@@ -3,6 +3,11 @@
 
   @media (max-width: $vp-1199) {
     width: 100%;
+    min-width: 768px;
+  }
+
+  @media (max-width: $vp-767) {
+    min-width: 320px;
   }
 }
 
@@ -12,6 +17,10 @@
 
   @media (max-width: $vp-1199) {
     padding: 70px 163px 70px 133px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 70px 15px 70px 15px;
   }
 }
 
@@ -29,6 +38,11 @@
     line-height: 50px;
     font-weight: 700;
     margin: 0 0 50px 0;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 32px;
+    line-height: 38px;
   }
 }
 

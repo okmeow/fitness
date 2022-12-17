@@ -5,6 +5,10 @@
   @media (max-width: $vp-1199) {
     min-width: 768px;
   }
+
+  @media (max-width: $vp-767) {
+    min-width: 320px;
+  }
 }
 
 .trainers__wrapper {
@@ -15,6 +19,10 @@
 
   @media (max-width: $vp-1199) {
     padding: 20px 100px 80px 100px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 20px 45px 20px 45px;
   }
 }
 
@@ -30,6 +38,11 @@
     font-size: 42px;
     line-height: 50px;
     text-align: center;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 32px;
+    line-height: 38px;
   }
 }
 
@@ -53,6 +66,10 @@
   @media (max-width: $vp-1199) {
     width: 268px;
   }
+
+  @media (max-width: $vp-767) {
+    width: 100%;
+  }
 }
 
 .trainers__item:not(:last-child) {
@@ -60,6 +77,10 @@
 
   @media (max-width: $vp-1199) {
     margin-right: 30px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-right: 0;
   }
 }
 
@@ -104,6 +125,11 @@
 
   @media (max-width: $vp-1199) {
     width: 268px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 100%;
+    padding: 48px 33px 48px 33px;
   }
 }
 
