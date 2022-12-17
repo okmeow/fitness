@@ -2,6 +2,7 @@ const feedbackMessages = document.querySelectorAll('[data-feedback-item="data-fe
 const feedbackButtonNext = document.querySelector('[data-feedback-button-next="data-feedback-button-next"]');
 const feedbackButtonPrevious = document.querySelector('[data-feedback-button-previous="data-feedback-button-previous"]');
 const SWIPE_MIN_DISTANCE = 70;
+const END_SWIPE_TIMEOUT = 200;
 let startPoint;
 let moved = false;
 
@@ -70,7 +71,7 @@ const feedbackHandler = () => {
   feedbackMessages.forEach((item) => item.addEventListener("touchend", () => {
     setTimeout(() => {
       moved = !moved;
-    }, 200);
+    }, END_SWIPE_TIMEOUT);
   }));
 
   feedbackButtonNext.addEventListener('click', nextSlideOn);
