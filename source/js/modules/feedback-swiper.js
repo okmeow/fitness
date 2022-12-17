@@ -8,15 +8,15 @@ let moved = false;
 
 const buttonToggler = () => {
   if (feedbackMessages[0].classList.contains('feedback__item--active')) {
-    feedbackButtonPrevious.style.display = "none";
+    feedbackButtonPrevious.disabled = true;
   } else {
-    feedbackButtonPrevious.style.display = "block";
+    feedbackButtonPrevious.disabled = false;
   }
 
   if (feedbackMessages[feedbackMessages.length - 1].classList.contains('feedback__item--active')) {
-    feedbackButtonNext.style.display = "none";
+    feedbackButtonNext.disabled = true;
   } else {
-    feedbackButtonNext.style.display = "block";
+    feedbackButtonNext.disabled = false;
   }
 };
 
