@@ -102,12 +102,16 @@
 .abonnements__radio-control {
   cursor: pointer;
 }
+.abonnements__radio-control input:focus + .abonnements__radio-text {
+  outline: 2px solid #102654;
+  outline-offset: 5px;
+}
 
-.abonnements__radio-control:hover .abonnements__text {
+.abonnements__radio-control:hover .abonnements__radio-text {
   color: #102654;
 }
 
-.abonnements__radio-control:active .abonnements__text {
+.abonnements__radio-control:active .abonnements__radio-text {
   color: #032e8c;
 }
 
