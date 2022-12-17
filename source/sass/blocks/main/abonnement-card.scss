@@ -4,6 +4,7 @@
   width: 360px;
   text-align: center;
   border: 7px solid #ffffff;
+  position: relative;
 
   &:hover {
     border: 1px solid;
@@ -43,6 +44,73 @@
   font-size: 60px;
   line-height: 90px;
   color: #103aae;
+  margin: 0 0 60px 0;
+
+  &::after {
+    display: block;
+    color: #e8e8e8;
+    position: absolute;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 150px;
+    opacity: 0.48;
+    top: 175px;
+    z-index: -1;
+  }
+}
+
+.abonnement-card__price--month-trainer {
+  &::after {
+    content: "5000";
+  }
+}
+
+.abonnement-card__price--month-day {
+  &::after {
+    content: "1700";
+  }
+}
+
+.abonnement-card__price--month-full-day {
+  &::after {
+    content: "2700";
+  }
+}
+
+.abonnement-card__price--half-year-trainer {
+  &::after {
+    content: "28000";
+  }
+}
+
+.abonnement-card__price--half-year-day {
+  &::after {
+    content: "9700";
+  }
+}
+
+.abonnement-card__price--half-year-full-day {
+  &::after {
+    content: "15000";
+  }
+}
+
+.abonnement-card__price--year-trainer {
+  &::after {
+    content: "50000";
+  }
+}
+
+.abonnement-card__price--year-day {
+  &::after {
+    content: "18000";
+  }
+}
+
+.abonnement-card__price--year-full-day {
+  &::after {
+    content: "22000";
+  }
 }
 
 .abonnement-card__rouble {
