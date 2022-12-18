@@ -126,6 +126,7 @@
   }
 
   &:disabled {
+    cursor: default;
     border-bottom: 2px solid #e6e6e6;
     border-left: 2px solid #e6e6e6;
   }

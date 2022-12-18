@@ -53,6 +53,10 @@
   }
 }
 
+.header__logo-wrapper {
+  margin-top: 10px;
+}
+
 .header__logo {
   @media (max-width: $vp-1199) {
     width: 82px;

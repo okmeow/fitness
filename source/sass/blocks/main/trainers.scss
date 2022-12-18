@@ -15,7 +15,7 @@
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 20px 103px 90px 103px;
+  padding: 18px 103px 90px 103px;
 
   @media (max-width: $vp-1199) {
     padding: 20px 100px 80px 100px;
@@ -32,7 +32,7 @@
   font-size: 54px;
   line-height: 65px;
   letter-spacing: 0.03em;
-  margin: 0 0 30px 0;
+  margin: 0 0 47px 2px;
 
   @media (max-width: $vp-1199) {
     font-size: 42px;
@@ -107,10 +107,14 @@
 }
 
 .trainers__name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
   margin: 0;
   position: absolute;
-  top: 80%;
-  left: 25%;
+  top: 82.7%;
+  left: 50%;
+  transform: translate(-50%, 0);
   color: #ffffff;
 }
 
@@ -119,7 +123,7 @@
   width: 260px;
   min-height: 200px;
   height: 294px;
-  padding: 58px 55px 58px 46px;
+  padding: 54px 45px 50px 45px;
   text-align: center;
   overflow-y: scroll;
 
@@ -144,14 +148,14 @@
 }
 
 .trainers__extra-name {
-  margin: 0 0 2px 0;
+  margin: 0;
   font-weight: 700;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 21px;
 }
 
 .trainers__extra-speciality {
-  margin: 0 0 45px 0;
+  margin: 0 0 31px 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -169,4 +173,22 @@
   font-size: 14px;
   line-height: 21px;
   text-align: left;
+  padding: 0 0 0 25px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+  }
+}
+
+.trainers__extra-item:not(:last-child) {
+  margin: 0 0 13px 0;
 }

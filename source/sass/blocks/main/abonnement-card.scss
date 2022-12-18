@@ -1,5 +1,5 @@
 .abonnement-card {
-  padding: 61px 70px;
+  padding: 56px 68px 82px 70px;
   background-color: #ffffff;
   width: 360px;
   text-align: center;
@@ -28,14 +28,14 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 29px;
-  margin: 0 0 22px 0;
+  margin: 0 0 10px 0;
 }
 
 .abonnement-card__description {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin: 0 0 96px 0;
+  margin: 0 0 65px 0;
   color: #495a7d;
 }
 
@@ -44,7 +44,7 @@
   font-size: 60px;
   line-height: 90px;
   color: #103aae;
-  margin: 0 0 60px 0;
+  margin: 0 0 50px 0;
 
   &::after {
     display: block;
@@ -54,7 +54,7 @@
     font-size: 100px;
     line-height: 150px;
     opacity: 0.48;
-    top: 175px;
+    top: 130px;
     z-index: -1;
   }
 }
@@ -122,9 +122,10 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
-  padding: 27px 44px;
+  padding: 24px 43px 24px 43px;
   border: 2px solid #102654;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .abonnement-card:hover .abonnement-card__link {

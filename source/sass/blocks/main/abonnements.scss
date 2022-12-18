@@ -4,6 +4,19 @@
   background-color: #f8f9fc;
   position: relative;
 
+    &::before {
+      content: "";
+      display: block;
+      background-image: url("../img/abonnements-background.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      width: 270px;
+      height: 410px;
+      position: absolute;
+      top: 65%;
+      left: calc(100vw - 270px);
+    }
+
   @media (max-width: $vp-1199) {
     min-width: 768px;
 
@@ -22,26 +35,13 @@
       background-image: none;
     }
   }
-
-  &::before {
-    content: "";
-    display: block;
-    background-image: url("../img/abonnements-background.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    width: 270px;
-    height: 410px;
-    position: absolute;
-    top: 65%;
-    left: calc(100vw - 270px);
-  }
 }
 
 .abonnements__wrapper {
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 120px 103px 120px 103px;
+  padding: 120px 103px 110px 103px;
 
   @media (max-width: $vp-1199) {
     padding: 100px 163px 90px 163px;
@@ -58,7 +58,7 @@
   font-size: 54px;
   line-height: 65px;
   letter-spacing: 0.03em;
-  margin: 0 0 25px 0;
+  margin: 0 0 18px 0;
   text-align: center;
 
   @media (max-width: $vp-1199) {
@@ -74,8 +74,10 @@
 
 .abonnements__radio-list {
   list-style-type: none;
-  margin: 0 0 40px 400px;
-  padding: 0;
+  margin: 0 0 38px 35.25%;
+  padding: 0 0 10px 0;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  width: 340px;
   display: flex;
 
   @media (max-width: $vp-1199) {
@@ -124,7 +126,7 @@
   font-size: 20px;
   line-height: 30px;
   color: rgba(16, 38, 84, 0.5);
-  padding: 0 0 10px 0;
+  padding: 0 0 13px 0;
 
   @media (max-width: $vp-1199) {
     font-size: 18px;

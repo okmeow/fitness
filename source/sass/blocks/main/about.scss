@@ -18,7 +18,7 @@
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 51px 122px 235px 122px;
+  padding: 120px 103px 235px 103px;
   position: relative;
 
   @media (max-width: $vp-1199) {
@@ -34,6 +34,7 @@
 
 .about__text-wrapper {
   max-width: 355px;
+  margin: 40px 0 0 60px;
 
   @media (max-width: $vp-1199) {
     align-self: center;
@@ -52,7 +53,7 @@
   font-size: 48px;
   line-height: 58px;
   letter-spacing: 0.03em;
-  margin: 0 0 25px 0;
+  margin: 0 0 5px 0;
 
   @media (max-width: $vp-767) {
     font-size: 32px;
@@ -60,23 +61,28 @@
   }
 }
 
-.about__text-wrapper p {
+.about__text-wrapper h3 {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  margin: 0 0 55px 0;
+  margin: 0 0 40px 0;
 }
 
-.about__additional-text {
-  @media (max-width: $vp-1199) {
-    display: none;
-  }
-}
-
-.about__text-wrapper p:last-child {
+.about__text-wrapper p {
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
+  margin: 0 0 8px 0;
+}
+
+.about__additional-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (max-width: $vp-1199) {
+    display: none;
+  }
 }
 
 .about__wrapper img {
@@ -95,8 +101,8 @@
 
 .about__video {
   position: absolute;
-  top: 50%;
-  left: 35%;
+  top: 54%;
+  left: 39.5%;
   display: none;
 
   @media (max-width: $vp-1199) {
@@ -117,13 +123,15 @@
   background-image: url("../img/ellipse.png"), linear-gradient(rgba(20, 54, 122, 0.5), rgba(20, 54, 122, 0.5)), url("../img/preview-video-about.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%, 100% 100%, 0 0;
+  background-size: 100px 100px, 100% 100%, 100% 100%;
   position: absolute;
-  top: 50%;
-  left: 35%;
+  top: 54%;
+  left: 39.5%;
 
   @media (min-width: $vp-1200) {
     @media (min-resolution: 2dppx) {
       background-image: url("../img/ellipse.png"), linear-gradient(rgba(20, 54, 122, 0.5), rgba(20, 54, 122, 0.5)), url("../img/preview-video-about@2x.jpg");
+      background-size: 100px 100px, 100% 100%, 100% 100%;
     }
   }
 
