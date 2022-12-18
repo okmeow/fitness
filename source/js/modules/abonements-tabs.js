@@ -5,11 +5,13 @@ const Abonnements = {
 };
 
 const abonnementRadioButtons = document.querySelectorAll('[data-radio="data-radio"]');
+const abonnementRadioButtonsList = document.querySelector('[data-radio-list="data-radio-list"]');
 const abonnementListMonth = document.querySelector('[data-abonnement="data-abonnement-month"]');
 const abonnementListHalfYear = document.querySelector('[data-abonnement="data-abonnement-half-year"]');
 const abonnementListYear = document.querySelector('[data-abonnement="data-abonnement-year"]');
 
 const abonnementRadioButtonsHandler = () => {
+  abonnementRadioButtonsList.classList.remove('abonnements__radio-list--nojs');
   abonnementListYear.style.display = "none";
   abonnementListHalfYear.style.display = "none";
 

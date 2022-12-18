@@ -87,6 +87,10 @@
   }
 }
 
+.abonnements__radio-list--nojs {
+  display: none;
+}
+
 .abonnements__radio-item:not(:last-child) {
   margin: 0 46px 0 0;
 
