@@ -28,7 +28,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 70px 15px 40px 15px;
+    padding: 62px 15px 70px 15px;
   }
 }
 
@@ -49,6 +49,7 @@
 
   @media (max-width: $vp-767) {
     text-align: left;
+    margin: 0 0 33px 0;
   }
 }
 
@@ -69,6 +70,7 @@
   @media (max-width: $vp-767) {
     font-size: 32px;
     line-height: 38px;
+    margin: 0 0 5px 0;
   }
 }
 
@@ -77,6 +79,10 @@
   font-size: 18px;
   line-height: 27px;
   margin: 0 0 32px 0;
+
+  @media (max-width: $vp-767) {
+    margin: 0 0 27px 0;
+  }
 }
 
 .about__text-wrapper p {
@@ -84,6 +90,11 @@
   font-size: 16px;
   line-height: 24px;
   margin: 0 0 8px 0;
+
+  @media (max-width: $vp-767) {
+    width: 90%;
+    margin: 0;
+  }
 }
 
 .about__additional-text {

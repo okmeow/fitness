@@ -20,7 +20,7 @@
 
   @media (max-width: $vp-767) {
     width: 100%;
-    padding: 55px 36px;
+    padding: 45px 34px 69px 34px;
   }
 }
 
@@ -29,6 +29,11 @@
   font-size: 26px;
   line-height: 29px;
   margin: 0 0 10px 0;
+
+  @media (max-width: $vp-767) {
+    font-size: 22px;
+    line-height: 24px;
+  }
 }
 
 .abonnement-card__description {
@@ -37,6 +42,10 @@
   line-height: 24px;
   margin: 0 0 65px 0;
   color: #495a7d;
+
+  @media (max-width: $vp-767) {
+    margin: 0 0 55px 0;
+  }
 }
 
 .abonnement-card__price {
@@ -48,6 +57,13 @@
 
   @media (max-width: $vp-1199) {
     margin: 0 0 50px 5px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    margin: 0 0 45px 7px;
   }
 
   &::after {
@@ -65,6 +81,13 @@
     @media (max-width: $vp-1199) {
       left: 26%;
       top: 135px;
+    }
+
+    @media (max-width: $vp-767) {
+      font-size: 80px;
+      line-height: 120px;
+      left: 21%;
+      top: 110px;
     }
   }
 }

@@ -49,6 +49,14 @@
     margin-top: 5px;
   }
 
+  @media (max-width: $vp-767) {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    margin-top: 0;
+  }
+
   &:hover {
     color: #a9c4ff;
   }
@@ -60,11 +68,20 @@
 
 .header__logo-wrapper {
   margin-top: 10px;
+
+  @media (max-width: $vp-767) {
+    margin: 0;
+  }
 }
 
 .header__logo {
   @media (max-width: $vp-1199) {
     width: 82px;
     height: 17px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 69px;
+    height: 24px;
   }
 }
