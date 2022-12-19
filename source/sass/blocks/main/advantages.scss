@@ -19,7 +19,7 @@
   padding: 146px 161px 85px 165px;
 
   @media (max-width: $vp-1199) {
-    padding: 100px 50px;
+    padding: 90px 45px 100px 45px;
   }
 
   @media (max-width: $vp-767) {
@@ -36,6 +36,12 @@
   letter-spacing: 0.03em;
   margin: 0 0 48px 5px;
 
+  @media (max-width: $vp-1199) {
+    font-size: 42px;
+    line-height: 50px;
+    margin: 0 21px 48px 0;
+  }
+
   @media (max-width: $vp-767) {
     font-size: 32px;
     line-height: 38px;
@@ -51,7 +57,8 @@
   gap: 0;
 
   @media (max-width: $vp-1199) {
-    gap: 240px 0;
+    gap: 20px 0;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (max-width: $vp-767) {
@@ -92,6 +99,11 @@
       display: none;
     }
   }
+
+  @media (max-width: $vp-1199) {
+    grid-column: 1 / 2;
+    padding: 0;
+  }
 }
 
 .advantages__item--parking {
@@ -113,18 +125,30 @@
       display: none;
     }
   }
+
+  @media (max-width: $vp-1199) {
+    grid-column: 2 / 3;
+  }
 }
 
 .advantages__item--comfort {
   padding: 75px 25px 0 18px;
   grid-column: 1 / 2;
   gap: 0 27px;
+
+  @media (max-width: $vp-1199) {
+    grid-column: 1 / 2;
+  }
 }
 
 .advantages__item--experience {
   padding: 75px 10px 0 10px;
   grid-column: 3 / 4;
   gap: 5px 20px;
+
+  @media (max-width: $vp-1199) {
+    grid-column: 2 / 3;
+  }
 }
 
 .advantages__extra-item {
@@ -140,6 +164,8 @@
   @media (max-width: $vp-1199) {
     width: 442px;
     padding: 45px 45px;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
   }
 
   @media (max-width: $vp-767) {
