@@ -17,6 +17,9 @@
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1600px;
+  margin: 0 auto;
+  width: 100%;
   padding: 30px 103px 10px 103px;
   justify-content: space-between;
 

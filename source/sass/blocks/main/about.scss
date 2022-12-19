@@ -16,7 +16,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  max-width: 1366px;
+  max-width: 1700px;
   margin: 0 auto;
   padding: 120px 103px 235px 103px;
   position: relative;
@@ -35,6 +35,10 @@
 .about__text-wrapper {
   max-width: 355px;
   margin: 40px 0 0 60px;
+
+  @media (min-width: 1550px) {
+    max-width: 455px;
+  }
 
   @media (max-width: $vp-1199) {
     align-self: center;
