@@ -16,7 +16,7 @@
   background-color: #102654;
 
   @media (max-width: $vp-1199) {
-    padding: 70px 163px 70px 133px;
+    padding: 60px 163px 70px 133px;
   }
 
   @media (max-width: $vp-767) {
@@ -37,7 +37,7 @@
     font-size: 42px;
     line-height: 50px;
     font-weight: 700;
-    margin: 0 0 50px 0;
+    margin: 0 0 38px 0;
   }
 
   @media (max-width: $vp-767) {
@@ -53,6 +53,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 28px 30px;
+
+  @media (max-width: $vp-1199) {
+    gap: 28px 55px;
+  }
 }
 
 .contacts-form__wrapper input {
