@@ -68,11 +68,16 @@
     font-size: 48px;
     line-height: 46px;
     max-width: 117px;
+    margin: 0 29px 0 0;
   }
 }
 
 .super-games__agenda {
   margin: 0;
+
+  @media (max-width: $vp-1199) {
+    margin: -5px 0 0 0;
+  }
 }
 
 .super-games__when {
@@ -105,7 +110,8 @@
 
   @media (max-width: $vp-1199) {
     font-size: 24px;
-    line-height: 36px;
+    line-height: 32px;
+    margin: 0 3px 0 0;
   }
 }
 
@@ -128,7 +134,7 @@
 
   @media (max-width: $vp-1199) {
     font-size: 24px;
-    line-height: 36px;
+    line-height: 31px;
   }
 }
 
@@ -140,6 +146,7 @@
   @media (max-width: $vp-1199) {
     font-size: 12px;
     line-height: 18px;
+    margin: 0 0 25px 0;
   }
 
   @media (max-width: $vp-767) {
@@ -162,7 +169,19 @@
   @media (max-width: $vp-1199) {
     font-size: 10px;
     line-height: 12px;
-    padding: 16px 45px;
+    padding: 12px 45px 12px 47px;
+    border: 2px solid #ffffff;
+    width: 100%;
+
+    &:hover {
+      border: 2px solid #a9c4ff;
+      color: #a9c4ff;
+    }
+
+    &:active {
+      border: 2px solid #6999ff;
+      color: #6999ff;
+    }
   }
 
   @media (max-width: $vp-767) {

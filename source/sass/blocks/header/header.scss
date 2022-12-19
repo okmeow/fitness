@@ -21,7 +21,7 @@
   justify-content: space-between;
 
   @media (max-width: $vp-1199) {
-    padding: 27px 45px 35px 5.8%;
+    padding: 30px 45px 25px 5.8%;
   }
 
   @media (max-width: $vp-767) {
@@ -42,6 +42,8 @@
     font-size: 24px;
     line-height: 29px;
     letter-spacing: 0.02em;
+    display: block;
+    margin-top: 5px;
   }
 
   &:hover {

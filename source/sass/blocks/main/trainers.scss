@@ -18,7 +18,7 @@
   padding: 18px 103px 90px 103px;
 
   @media (max-width: $vp-1199) {
-    padding: 20px 100px 80px 100px;
+    padding: 50px 100px 80px 100px;
   }
 
   @media (max-width: $vp-767) {
@@ -38,6 +38,7 @@
     font-size: 42px;
     line-height: 50px;
     text-align: center;
+    margin: 0 2px 32px 0;
   }
 
   @media (max-width: $vp-767) {
@@ -92,10 +93,18 @@
 
 .trainers__item--1 {
   background-image: url("../img/trainer-1.jpg");
+
+  @media (max-width: $vp-1199) {
+    display: none;
+  }
 }
 
 .trainers__item--2 {
   background-image: url("../img/trainer-2.jpg");
+
+  @media (max-width: $vp-1199) {
+    display: none;
+  }
 }
 
 .trainers__item--3 {

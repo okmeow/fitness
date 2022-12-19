@@ -5,6 +5,7 @@
 
   @media (max-width: $vp-1199) {
     min-width: 768px;
+    background: conic-gradient(from 139.4deg at 20.7% 35.74%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
   }
 
   @media (max-width: $vp-767) {
@@ -38,6 +39,7 @@
 
   @media (max-width: $vp-1199) {
     margin: 0 30px 0 0;
+    width: 200px;
   }
 
   @media (max-width: $vp-767) {
@@ -59,6 +61,8 @@
   @media (max-width: $vp-1199) {
     font-size: 34px;
     line-height: 41px;
+    margin: 50px 3px 5px 0;
+    text-align: end;
   }
 
   @media (max-width: $vp-767) {
@@ -106,6 +110,8 @@
   @media (max-width: $vp-1199) {
     font-size: 72px;
     line-height: 86px;
+    text-transform: none;
+    margin: 0 0 55px 0;
   }
 
   @media (max-width: $vp-767) {
@@ -128,6 +134,7 @@
 
   @media (max-width: $vp-1199) {
     padding: 20px 30px;
+    margin: 0 0 0 15px;
   }
 
   @media (max-width: $vp-767) {
@@ -154,10 +161,10 @@
   text-align: end;
 
   @media (max-width: $vp-1199) {
-    margin: 220px 0 0 0;
+    margin: 185px 10px 0 0;
   }
 
-  @media (max-width: $vp-1199) {
+  @media (max-width: $vp-767) {
     position: absolute;
     top: 25%;
     left: 5%;

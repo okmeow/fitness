@@ -14,7 +14,7 @@
   }
 
   @media (max-width: $vp-1199) {
-    padding: 61px 111px;
+    padding: 57px 110px 80px 110px;
     width: 442px;
   }
 
@@ -46,6 +46,10 @@
   color: #103aae;
   margin: 0 0 50px 0;
 
+  @media (max-width: $vp-1199) {
+    margin: 0 0 50px 5px;
+  }
+
   &::after {
     display: block;
     color: #e8e8e8;
@@ -57,6 +61,11 @@
     top: 130px;
     left: 21%;
     z-index: -1;
+
+    @media (max-width: $vp-1199) {
+      left: 26%;
+      top: 135px;
+    }
   }
 }
 

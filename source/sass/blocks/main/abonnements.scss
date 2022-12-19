@@ -22,9 +22,9 @@
 
     &::before {
       background-image: url("../img/tablet/abonnements-background.png");
-      width: 300px;
-      top: 85%;
-      left: calc(100vw - 300px);
+      width: 348px;
+      top: 82%;
+      left: calc(100vw - 348px);
     }
   }
 
@@ -44,7 +44,7 @@
   padding: 120px 103px 110px 103px;
 
   @media (max-width: $vp-1199) {
-    padding: 100px 163px 90px 163px;
+    padding: 102px 163px 92px 163px;
   }
 
   @media (max-width: $vp-767) {
@@ -64,6 +64,7 @@
   @media (max-width: $vp-1199) {
     font-size: 42px;
     line-height: 50px;
+    margin: 0 11px 20px 0;
   }
 
   @media (max-width: $vp-767) {
@@ -81,7 +82,7 @@
   display: flex;
 
   @media (max-width: $vp-1199) {
-    margin: 0 0 40px 70px;
+    margin: 0 0 44px 55px;
   }
 
   @media (max-width: $vp-767) {
@@ -161,7 +162,7 @@ input:checked ~ .abonnements__radio-text {
   z-index: 2;
 
   @media (max-width: $vp-1199) {
-    margin: 0 0 40px 0;
+    margin: 0 0 42px 0;
   }
 }
 
