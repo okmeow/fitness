@@ -55,6 +55,7 @@
     line-height: 150px;
     opacity: 0.48;
     top: 130px;
+    left: 21%;
     z-index: -1;
   }
 }
@@ -80,6 +81,7 @@
 .abonnement-card__price--half-year-trainer {
   &::after {
     content: "28000";
+    left: 12%;
   }
 }
 
@@ -92,24 +94,28 @@
 .abonnement-card__price--half-year-full-day {
   &::after {
     content: "15000";
+    left: 12%;
   }
 }
 
 .abonnement-card__price--year-trainer {
   &::after {
     content: "50000";
+    left: 12%;
   }
 }
 
 .abonnement-card__price--year-day {
   &::after {
     content: "18000";
+    left: 12%;
   }
 }
 
 .abonnement-card__price--year-full-day {
   &::after {
     content: "22000";
+    left: 12%;
   }
 }
 
