@@ -114,6 +114,10 @@
   &::after {
     content: "28000";
     left: 12%;
+
+    @media (max-width: $vp-1199) {
+      left: 19%;
+    }
   }
 }
 
@@ -127,6 +131,10 @@
   &::after {
     content: "15000";
     left: 12%;
+
+    @media (max-width: $vp-1199) {
+      left: 19%;
+    }
   }
 }
 
@@ -134,6 +142,10 @@
   &::after {
     content: "50000";
     left: 12%;
+
+    @media (max-width: $vp-1199) {
+      left: 19%;
+    }
   }
 }
 
@@ -141,6 +153,10 @@
   &::after {
     content: "18000";
     left: 12%;
+
+    @media (max-width: $vp-1199) {
+      left: 19%;
+    }
   }
 }
 
@@ -148,6 +164,10 @@
   &::after {
     content: "22000";
     left: 12%;
+
+    @media (max-width: $vp-1199) {
+      left: 19%;
+    }
   }
 }
 
