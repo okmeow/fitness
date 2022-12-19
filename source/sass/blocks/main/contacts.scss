@@ -46,7 +46,6 @@
 }
 
 .contacts__list {
-  margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5px 100px;
@@ -156,6 +155,7 @@
 
 .contacts__definition--email a {
   color: #102654;
+
   &:hover {
     color: #395183;
   }
@@ -167,6 +167,7 @@
 
 .contacts__definition--phone a {
   color: #102654;
+
   &:hover {
     color: #395183;
   }
