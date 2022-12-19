@@ -16,7 +16,7 @@
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 146px 161px 85px 165px;
+  padding: 146px 161px 83px 165px;
 
   @media (max-width: $vp-1199) {
     padding: 90px 45px 100px 45px;
@@ -34,7 +34,7 @@
   font-size: 54px;
   line-height: 65px;
   letter-spacing: 0.03em;
-  margin: 0 0 48px 5px;
+  margin: 0 0 45px 5px;
 
   @media (max-width: $vp-1199) {
     font-size: 42px;
@@ -69,8 +69,7 @@
 }
 
 .advantages__item {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
   position: relative;
 
   @media (max-width: $vp-767) {
@@ -80,10 +79,8 @@
 }
 
 .advantages__item--square {
-  padding: 0 10px 80px 18px;
+  padding: 0 10px 70px 18px;
   grid-column: 1 / 2;
-  gap: 5px 20px;
-  position: relative;
 
   &::after {
     content: "";
@@ -107,9 +104,8 @@
 }
 
 .advantages__item--parking {
-  padding: 0 10px 80px 5px;
+  padding: 0 10px 75px 60px;
   grid-column: 3 / 4;
-  gap: 5px 10px;
 
   &::after {
     content: "";
@@ -132,9 +128,8 @@
 }
 
 .advantages__item--comfort {
-  padding: 75px 25px 0 18px;
+  padding: 70px 25px 0 18px;
   grid-column: 1 / 2;
-  gap: 0 27px;
 
   @media (max-width: $vp-1199) {
     grid-column: 1 / 2;
@@ -142,9 +137,8 @@
 }
 
 .advantages__item--experience {
-  padding: 75px 10px 0 10px;
+  padding: 70px 10px 0 60px;
   grid-column: 3 / 4;
-  gap: 5px 20px;
 
   @media (max-width: $vp-1199) {
     grid-column: 2 / 3;
@@ -157,7 +151,7 @@
   display: block;
   text-align: center;
   padding: 55px 34px 45px 30px;
-  margin: 8px 0 5px 0;
+  margin: 10px 0 8px 0;
   grid-column: 2 / 3;
   grid-row: 1 / 3;
 
@@ -175,84 +169,41 @@
 }
 
 .advantages__item-number {
-  margin: 0;
+  margin: 0 30px 0 0;
   font-weight: 700;
   font-size: 71px;
-  line-height: 71px;
+  line-height: 69px;
   background-image: linear-gradient(142.51deg, #d10a42 0%, #0041ca 31.33%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  grid-column: 1 / 2;
-  grid-row: 1 / 3;
-  position: relative;
-  bottom: 4px;
-}
-
-.advantages__item-number--parking,
-.advantages__item-number--experience {
-  text-align: end;
 }
 
 .advantages__number-description {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  position: absolute;
   color: #2e35ac;
-}
-
-.advantages__number-description--square {
-  top: 63px;
-  left: 4.9%;
-}
-
-.advantages__number-description--parking {
-  top: 63px;
-  left: 14.5%;
-}
-
-.advantages__number-description--comfort {
-  top: 137px;
-  left: 4.9%;
-}
-
-.advantages__number-description--experience {
-  top: 137px;
-  left: 14.5%;
+  display: block;
+  text-align: left;
 }
 
 .advantages__item-title {
-  margin: 0;
+  margin: 5px 0 0 0;
   font-weight: 700;
   font-size: 22px;
-  line-height: 33px;
+  line-height: 30px;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 }
 
-.advantages__item-title--parking {
-  padding: 0 0 0 20px;
-}
-
-.advantages__item-title--experience {
-  padding: 0 0 0 12px;
-}
-
-.advantages__item-description {
-  margin: 0;
+.advantages__title-description {
+  margin: 7px 0 0 0;
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-}
-
-.advantages__item-description--parking {
-  padding: 0 0 0 20px;
-}
-
-.advantages__item-description--experience {
-  padding: 0 0 0 12px;
+  display: block;
 }
 
 .advantages__extra-number {
