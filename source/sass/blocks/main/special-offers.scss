@@ -18,7 +18,7 @@
   padding: 150px 103px 60px 103px;
 
   @media (max-width: $vp-1199) {
-    padding: 100px 45px 50px 45px;
+    padding: 92px 45px 50px 45px;
   }
 
   @media (max-width: $vp-767) {
@@ -38,6 +38,7 @@
   @media (max-width: $vp-1199) {
     font-size: 42px;
     line-height: 50px;
+    margin: 0 3px 40px 0;
   }
 
   @media (max-width: $vp-767) {
@@ -54,6 +55,10 @@
   grid-template-columns: 1fr 1fr;
   gap: 40px;
 
+  @media (max-width: $vp-1199) {
+    gap: 30px 30px;
+  }
+
   @media (max-width: $vp-767) {
     display: flex;
     flex-direction: column;
@@ -64,7 +69,7 @@
   padding: 22px 20px 20px 28px;
 
   @media (max-width: $vp-1199) {
-    padding: 35px;
+    padding: 21px 30px 27px 30px;
   }
 }
 
@@ -182,6 +187,14 @@
   line-height: 22px;
   color: #1c3374;
   margin: 0 0 65px 0;
+}
+
+.special-offers__description--friend {
+  @media (min-width: 320px) {
+    @media (max-width: $vp-1199) {
+      margin: 0 0 45px 0;
+    }
+  }
 }
 
 .special-offers__link {
