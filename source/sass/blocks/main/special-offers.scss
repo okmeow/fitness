@@ -94,6 +94,9 @@
 }
 
 .special-offers__item--sale img {
+  object-fit: cover;
+  height: 100%;
+
   @media (max-width: $vp-1199) {
     width: 399px;
     height: 462px;
@@ -101,8 +104,9 @@
 
   @media (max-width: $vp-767) {
     width: 100%;
-    height: auto;
+    height: 299px;
     margin: 0 auto;
+    object-fit: fill;
   }
 }
 
