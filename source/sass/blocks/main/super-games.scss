@@ -157,6 +157,7 @@
   padding: 24px 111px 25px 111px;
   border: 4px solid #ffffff;
   align-self: center;
+  user-select: none;
 
   @media (max-width: $vp-1199) {
     font-size: 10px;

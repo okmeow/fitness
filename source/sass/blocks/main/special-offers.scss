@@ -15,7 +15,7 @@
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 140px 103px 60px 103px;
+  padding: 150px 103px 60px 103px;
 
   @media (max-width: $vp-1199) {
     padding: 100px 45px 50px 45px;
@@ -33,6 +33,7 @@
   line-height: 65px;
   letter-spacing: 0.03em;
   text-align: center;
+  margin: 0 0 33px 0;
 
   @media (max-width: $vp-1199) {
     font-size: 42px;
@@ -60,6 +61,8 @@
 }
 
 .special-offers__item {
+  padding: 22px 20px 20px 28px;
+
   @media (max-width: $vp-1199) {
     padding: 35px;
   }
@@ -77,6 +80,7 @@
   flex-wrap: wrap;
   grid-column: 1 / 2;
   grid-row: 1 / 3;
+  padding: 0;
 
   @media (max-width: $vp-1199) {
     grid-column: 1 / -1;
@@ -104,7 +108,7 @@
 
 .special-offers__sale {
   background-color: #ed0233;
-  padding: 45px 45px;
+  padding: 35px 45px 45px 45px;
   color: #ffffff;
   max-width: 280px;
 
@@ -122,21 +126,22 @@
 .special-offers__sale-name {
   font-weight: 700;
   font-size: 28px;
-  line-height: 44px;
+  line-height: 36px;
+  margin: 0;
 }
 
 .special-offers__sale-price {
   font-weight: 700;
   font-size: 70px;
-  line-height: 109px;
-  margin: 0 0 35px 0;
+  line-height: 70px;
+  margin: 0 0 20px 0;
 }
 
 .special-offers__sale-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  margin: 0 0 20px 0;
+  margin: 0 0 185px 0;
 }
 
 .special-offers__sale-link {
@@ -153,6 +158,10 @@
   &:hover {
     border-bottom: 1px dotted #ffffff;
   }
+
+  &:active {
+    border-bottom: 1px solid #739fff;;
+  }
 }
 
 .special-offers__name {
@@ -160,7 +169,7 @@
   font-size: 26px;
   line-height: 30px;
   color: #1c3374;
-  margin: 0 0 25px 0;
+  margin: 0 0 8px 0;
 }
 
 .special-offers__description {
@@ -168,7 +177,7 @@
   font-size: 16px;
   line-height: 22px;
   color: #1c3374;
-  margin: 0 0 15px 0;
+  margin: 0 0 65px 0;
 }
 
 .special-offers__link {
@@ -184,5 +193,9 @@
 
   &:hover {
     border-bottom: 1px dotted #1c3374;
+  }
+
+  &:active {
+    border-bottom: 1px solid #739fff;;
   }
 }

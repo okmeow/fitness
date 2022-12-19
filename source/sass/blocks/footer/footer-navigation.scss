@@ -1,8 +1,7 @@
 .footer-navigation {
   display: flex;
   flex-wrap: wrap;
-  width: 800px;
-  justify-content: space-between;
+  width: 795px;
 
   @media (max-width: $vp-1199) {
     width: 550px;
@@ -34,6 +33,10 @@
   @media (max-width: $vp-767) {
     flex-direction: column;
   }
+}
+
+.footer-navigation__list--first {
+  margin: 0 40px 0 auto;
 }
 
 .footer-navigation__list:last-child {
@@ -71,7 +74,7 @@
 }
 
 .footer-navigation img {
-  margin-top: 10px;
+  margin-top: 8px;
 
   @media (max-width: $vp-1199) {
     margin-top: 5px;

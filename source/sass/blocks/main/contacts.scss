@@ -12,7 +12,7 @@
 }
 
 .contacts__wrapper {
-  padding: 56px 159px 70px 120px;
+  padding: 56px 80px 63px 120px;
   border-top: 1px solid #74819c;
 
   @media (max-width: $vp-1199) {
@@ -31,7 +31,7 @@
   font-size: 54px;
   line-height: 65px;
   letter-spacing: 0.03em;
-  margin: 0 0 40px 0;
+  margin: 0 0 37px 0;
 
   @media (max-width: $vp-1199) {
     font-size: 42px;
@@ -48,7 +48,20 @@
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px 60px;
+  gap: 5px 100px;
+  margin: 0 0 0 5px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 88%;
+    background-color: #74819c;
+    position: absolute;
+    left: 47.9%;
+    top: 5%;
+  }
 
   @media (max-width: $vp-767) {
     display: block;
@@ -94,6 +107,7 @@
 .contacts__definition--address {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+  margin: 0 0 10px 0;
 }
 
 .contacts__term--schedule {
@@ -124,4 +138,26 @@
 .contacts__definition--email {
   grid-column: 2 / 3;
   grid-row: 4 / 5;
+}
+
+.contacts__definition--email a {
+  color: #102654;
+  &:hover {
+    color: #395183;
+  }
+
+  &:active {
+    color: #133f9e;
+  }
+}
+
+.contacts__definition--phone a {
+  color: #102654;
+  &:hover {
+    color: #395183;
+  }
+
+  &:active {
+    color: #133f9e;
+  }
 }

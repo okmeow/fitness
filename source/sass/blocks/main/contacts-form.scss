@@ -12,7 +12,7 @@
 }
 
 .contacts-form__wrapper {
-  padding: 56px 170px 70px 103px;
+  padding: 56px 170px 69px 103px;
   background-color: #102654;
 
   @media (max-width: $vp-1199) {
@@ -31,7 +31,7 @@
   font-size: 54px;
   line-height: 84px;
   letter-spacing: 0.03em;
-  margin: 0 0 25px 0;
+  margin: 0 0 20px 0;
 
   @media (max-width: $vp-1199) {
     font-size: 42px;
@@ -52,7 +52,7 @@
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 28px 30px;
 }
 
 .contacts-form__wrapper input {
@@ -64,6 +64,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
+  padding: 1px 2px 5px 1px;
 
   @media (max-width: $vp-1199) {
     width: 100%;
@@ -77,9 +78,24 @@
 .contacts-form__wrapper button {
   grid-column: 1 / -1;
   border: 3px solid #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
   color: #ffffff;
   background-color: transparent;
-  padding: 10px 10px;
+  padding: 16px 10px;
   cursor: pointer;
   text-transform: uppercase;
+  user-select: none;
+
+  &:hover {
+    border: 3px solid #a9c4ff;
+    color: #a9c4ff;
+  }
+
+  &:active {
+    border: 3px solid #6999ff;
+    color: #6999ff;
+  }
 }

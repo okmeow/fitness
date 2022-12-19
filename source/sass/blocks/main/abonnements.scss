@@ -107,6 +107,7 @@
 
 .abonnements__radio-control {
   cursor: pointer;
+  user-select: none;
 }
 .abonnements__radio-control input:focus + .abonnements__radio-text {
   outline: 2px solid #102654;
