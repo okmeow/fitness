@@ -20,7 +20,8 @@
 
   @media (max-width: $vp-767) {
     width: 100%;
-    padding: 45px 34px 69px 34px;
+    max-width: 415px;
+    padding: 45px 34px 45px 34px;
   }
 }
 
@@ -63,7 +64,7 @@
     font-weight: 700;
     font-size: 48px;
     line-height: 72px;
-    margin: 0 0 45px 7px;
+    margin: 0 0 25px 7px;
   }
 
   &::after {

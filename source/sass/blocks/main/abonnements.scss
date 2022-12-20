@@ -87,7 +87,7 @@
   }
 
   @media (max-width: $vp-767) {
-    margin: 0 0 33px 0;
+    margin: 0 auto 33px auto;
     padding: 0 0 13px 0;
     width: 290px;
   }
@@ -172,7 +172,7 @@ input:checked ~ .abonnements__radio-text {
   }
 
   @media (max-width: $vp-767) {
-    margin: 0 0 35px 0;
+    margin: 0 auto 35px auto;
   }
 }
 

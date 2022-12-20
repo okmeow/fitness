@@ -61,6 +61,8 @@
   }
 
   @media (max-width: $vp-767) {
+    max-width: 600px;
+    margin: 0 auto;
     background-image: url("../img/mobile/super-games-man.jpg"), linear-gradient(#ed0233 50%, #000147 50%);
     background-position: 50% 100%, 100% 100%;
     background-size: 290px auto, 100% 100%;
