@@ -17,7 +17,11 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding: 120px 103px 90px 103px;
+  padding: 120px 7.54% 90px 7.54%;
+
+  @media (min-width: 1367px) {
+    padding: 120px 103px 90px 103px;
+  }
 
   @media (max-width: $vp-1199) {
     padding: 100px 45px 50px 45px;
@@ -34,16 +38,16 @@
   background-color: #ed0233;
   color: #ffffff;
   width: 100%;
-  padding: 85px 77px 87px 76px;
+  padding: 85px 737px 87px 6.55%;
   background-image: url("../img/super-games-man.jpg");
   background-repeat: no-repeat;
   background-position: 100% 0;
-  background-size: 660px 100%;
+  background-size: 56.89% 100%;
 
   @media (min-width: 768px) {
     @media (min-resolution: 2dppx) {
       background-image: url("../img/super-games-man@2x.jpg");
-      background-size: 660px 100%;
+      background-size: 56.89% 100%;
     }
   }
 
