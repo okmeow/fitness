@@ -124,6 +124,7 @@
   @media (max-width: $vp-1199) {
     width: 678px;
     height: 345px;
+    margin: 0 auto;
   }
 
   @media (max-width: $vp-767) {
@@ -144,7 +145,7 @@
     width: 266px;
     height: 167px;
     top: 69%;
-    left: 32.8%;
+    left: calc(50vw - 133px);
   }
 
   @media (max-width: $vp-767) {
@@ -177,7 +178,7 @@
     height: 167px;
     background-size: 73px 73px, 100% 100%, 100% 100%;
     top: 69%;
-    left: 32.8%;
+    left: calc(50vw - 133px);
   }
 
   @media (max-width: $vp-767) {

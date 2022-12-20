@@ -82,7 +82,8 @@
   display: flex;
 
   @media (max-width: $vp-1199) {
-    margin: 0 0 44px 55px;
+    margin: 0 auto 44px auto;
+    padding: 0 0 10px 5px;
   }
 
   @media (max-width: $vp-767) {
@@ -167,6 +168,7 @@ input:checked ~ .abonnements__radio-text {
 
   @media (max-width: $vp-1199) {
     margin: 0 0 40px 0;
+    margin: 0 auto 40px auto;
   }
 
   @media (max-width: $vp-767) {
@@ -178,10 +180,12 @@ input:checked ~ .abonnements__radio-text {
   margin-right: 0;
 
   @media (max-width: $vp-1199) {
-    margin-bottom: 0;
+    margin: 0 auto;
   }
 }
 
 .abonnements__list .abonnements__item:nth-child(3n) {
-  margin-right: 0;
+  @media (min-width: 1200px) {
+    margin-right: 0;
+  }
 }
