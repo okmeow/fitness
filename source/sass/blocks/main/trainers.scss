@@ -13,9 +13,13 @@
 
 .trainers__wrapper {
   width: 100%;
-  max-width: 1366px;
+  max-width: 1900px;
   margin: 0 auto;
-  padding: 18px 103px 90px 103px;
+  padding: 15px 7.54% 90px 7.54%;
+
+  @media (min-width: 1367px) {
+  padding: 15px 103px 90px 103px;
+  }
 
   @media (max-width: $vp-1199) {
     padding: 50px 100px 100px 100px;
@@ -54,10 +58,15 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: $vp-767) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .trainers__item {
-  width: 260px;
+  width: 22.41%;
   min-height: 200px;
   height: 294px;
   position: relative;
@@ -66,17 +75,18 @@
   background-size: 100% 100%;
 
   @media (max-width: $vp-1199) {
-    width: 268px;
+    width: 47.18%;
   }
 
   @media (max-width: $vp-767) {
     width: 100%;
+    max-width: 450px;
     height: 274px;
   }
 }
 
 .trainers__item:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 3.45%;
 
   @media (max-width: $vp-1199) {
     margin-right: 30px;
@@ -126,6 +136,7 @@
   font-size: 18px;
   line-height: 27px;
   margin: 0;
+  width: 60%;
   position: absolute;
   top: 82.7%;
   left: 50%;
@@ -135,25 +146,24 @@
   @media (max-width: $vp-1199) {
     left: 51%;
   }
+
+  @media (max-width: $vp-767) {
+    width: 70%;
+  }
 }
 
 .trainers__extra {
   display: none;
-  width: 260px;
+  width: 100%;
   min-height: 200px;
   height: 294px;
   padding: 54px 45px 50px 45px;
   text-align: center;
   overflow-y: scroll;
 
-  @media (max-width: $vp-1199) {
-    width: 268px;
-  }
-
   @media (max-width: $vp-767) {
-    width: 100%;
     height: 274px;
-    padding: 44px 25px 48px 25px;
+    padding: 44px 25px 30px 25px;
   }
 }
 
