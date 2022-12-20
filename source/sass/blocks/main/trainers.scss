@@ -16,6 +16,7 @@
   max-width: 1900px;
   margin: 0 auto;
   padding: 15px 7.54% 90px 7.54%;
+  position: relative;
 
   @media (min-width: 1367px) {
     padding: 15px 103px 90px 103px;
@@ -222,4 +223,70 @@
 
 .trainers__extra-item:not(:last-child) {
   margin: 0 0 13px 0;
+}
+
+
+.trainers__button {
+  width: 23px;
+  height: 23px;
+  border: none;
+  border-bottom: 2px solid #afafaf;
+  border-left: 2px solid #afafaf;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+
+  @media (max-width: $vp-767) {
+    width: 12px;
+    height: 14px;
+  }
+
+  &:hover {
+    border-bottom: 2px solid #1c3374;
+    border-left: 2px solid #1c3374;
+  }
+
+  &:active {
+    border-bottom: 2px solid #1c3374;
+    border-left: 2px solid #1c3374;
+    opacity: 0.5;
+  }
+
+  &:disabled {
+    cursor: default;
+    border-bottom: 2px solid #e6e6e6;
+    border-left: 2px solid #e6e6e6;
+  }
+}
+
+.trainers__button--previous {
+  transform: rotate(45deg);
+  top: 52%;
+  left: 3.7%;
+
+  @media (max-width: $vp-1199) {
+    top: 51%;
+    left: 6.2%;
+  }
+
+  @media (max-width: $vp-767) {
+    top: 52%;
+    left: 5%;
+  }
+}
+
+.trainers__button--next {
+  transform: rotate(225deg);
+  top: 52%;
+  left: 94.8%;
+
+  @media (max-width: $vp-1199) {
+    top: 51%;
+    left: 90.9%;
+  }
+
+  @media (max-width: $vp-767) {
+    top: 52%;
+    left: 90%;
+  }
 }
