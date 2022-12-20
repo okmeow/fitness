@@ -104,6 +104,12 @@
   }
 }
 
+.trainers__item:nth-child(4n) {
+  @media (min-width: 1200px) {
+    margin-right: 0;
+  }
+}
+
 .trainers__item--1 {
   background-image: url("../img/trainer-1.jpg");
 
@@ -132,26 +138,23 @@
   }
 }
 
+.trainers__item--5,
+.trainers__item--6,
+.trainers__item--7,
+.trainers__item--8 {
+  display: none;
+}
+
 .trainers__name {
   font-weight: 700;
   font-size: 18px;
   line-height: 27px;
   margin: 0;
-  width: 60%;
   position: absolute;
-  top: 82.7%;
+  top: 82.8%;
   left: 50%;
   transform: translate(-50%, 0);
   color: #ffffff;
-
-  @media (max-width: $vp-1199) {
-    left: 61%;
-    width: 58%;
-  }
-
-  @media (max-width: $vp-767) {
-    width: 70%;
-  }
 }
 
 .trainers__extra {
