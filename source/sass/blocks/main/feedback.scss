@@ -19,7 +19,7 @@
   position: relative;
 
   @media (max-width: $vp-1199) {
-    padding: 40px 101px 100px 101px;
+    padding: 41px 101px 100px 101px;
   }
 
   @media (max-width: $vp-767) {
@@ -63,10 +63,11 @@
   margin: 0 auto;
   background-image: url("../img/feedback-avatar.png");
   background-repeat: no-repeat;
-  background-position: 62px 62px;
+  background-position: 64px 62px;
 
   @media (max-width: $vp-1199) {
     width: 566px;
+    padding: 55px 60px 58px 172px;
   }
 
   @media (max-width: $vp-767) {
