@@ -22,7 +22,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 20px 45px 20px 45px;
+    padding: 22px 47px 68px 47px;
   }
 }
 
@@ -44,6 +44,7 @@
   @media (max-width: $vp-767) {
     font-size: 32px;
     line-height: 38px;
+    margin: 0 2px 45px 0;
   }
 }
 
@@ -70,6 +71,7 @@
 
   @media (max-width: $vp-767) {
     width: 100%;
+    height: 274px;
   }
 }
 
@@ -113,6 +115,10 @@
 
 .trainers__item--4 {
   background-image: url("../img/trainer-4.jpg");
+
+  @media (max-width: $vp-767) {
+    display: none;
+  }
 }
 
 .trainers__name {

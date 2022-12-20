@@ -23,7 +23,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 70px 0;
+    padding: 65px 0 65px 0;
   }
 }
 
@@ -45,6 +45,7 @@
   @media (max-width: $vp-767) {
     font-size: 32px;
     line-height: 38px;
+    margin: 0 16px 45px 0;
   }
 }
 
@@ -101,6 +102,10 @@
     grid-column: 1 / 2;
     padding: 0;
   }
+
+  @media (max-width: $vp-767) {
+    padding: 0 0 37px 0;
+  }
 }
 
 .advantages__item--parking {
@@ -126,6 +131,10 @@
     grid-column: 2 / 3;
     padding: 0 5px 45px 0;
   }
+
+  @media (max-width: $vp-767) {
+    padding: 0 0 45px 0;
+  }
 }
 
 .advantages__item--comfort {
@@ -136,6 +145,10 @@
     grid-column: 1 / 2;
     padding: 43px 15px 0 0;
   }
+
+  @media (max-width: $vp-767) {
+    padding: 43px 0 0 0;
+  }
 }
 
 .advantages__item--experience {
@@ -145,6 +158,10 @@
   @media (max-width: $vp-1199) {
     grid-column: 2 / 3;
     padding: 43px 10px 0 0;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 37px 0 0 0;
   }
 }
 
@@ -162,6 +179,10 @@
     font-size: 58px;
     line-height: 55px;
   }
+
+  @media (max-width: $vp-767) {
+    margin: 0 0 4px 0;
+  }
 }
 
 .advantages__number-description {
@@ -171,6 +192,10 @@
   color: #2e35ac;
   display: block;
   text-align: left;
+
+  @media (max-width: $vp-767) {
+    text-align: center;
+  }
 }
 
 .advantages__item-title {
@@ -184,6 +209,11 @@
   @media (max-width: $vp-1199) {
     margin: 0;
     font-size: 20px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 71%;
+    margin: 0 auto;
   }
 }
 
@@ -221,7 +251,7 @@
 
   @media (max-width: $vp-767) {
     width: 320px;
-    padding: 50px 50px 50px 50px;
+    padding: 43px 50px 45px 50px;
   }
 }
 
@@ -231,6 +261,10 @@
   font-weight: 700;
   font-size: 74px;
   line-height: 74px;
+
+  @media (max-width: $vp-767) {
+    line-height: 64px;
+  }
 }
 
 .advantages__extra-number-description {
@@ -244,6 +278,10 @@
     font-size: 22px;
     line-height: 33px;
     margin: 0 0 15px 0;
+  }
+
+  @media (max-width: $vp-767) {
+    margin: 0 0 7px 0;
   }
 }
 
