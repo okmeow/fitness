@@ -23,7 +23,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 20px 47px 70px 47px;
+    padding: 14px 47px 70px 47px;
   }
 }
 
@@ -71,9 +71,9 @@
 
   @media (max-width: $vp-767) {
     width: 226px;
-    padding: 40px 25px 40px 25px;
-    background-size: 62px 62px;
-    background-position: 30px 40px;
+    padding: 50px 25px 36px 25px;
+    background-size: 68px 68px;
+    background-position: 40px 40px;
   }
 }
 
@@ -88,7 +88,7 @@
   margin: 0 0 11px 0;
 
   @media (max-width: $vp-767) {
-    margin: 0 0 20px 90px;
+    margin: 0 0 20px 100px;
     line-height: 26px;
   }
 }
@@ -101,6 +101,7 @@
 
   @media (max-width: $vp-767) {
     text-align: center;
+    line-height: 140%;
   }
 }
 
