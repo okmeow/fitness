@@ -10,6 +10,7 @@
 
   @media (max-width: $vp-767) {
     min-width: 320px;
+    background: conic-gradient(from 171.43deg at 35.31% 34.22%, #b80027 -46.69deg, #003D85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   }
 }
 
@@ -23,6 +24,10 @@
   flex-direction: row-reverse;
   color: #ffffff;
 
+  @media (max-width: 1365px) {
+    padding: 51px 140px 51px 122px;
+  }
+
   @media (max-width: $vp-1199) {
     padding: 82px 45px;
   }
@@ -34,7 +39,7 @@
 }
 
 .welcome__text-wrapper {
-  margin: 0 64px 0 0;
+  margin: 0 6.8% 0 0;
   width: 250px;
 
   @media (max-width: $vp-1199) {
@@ -155,9 +160,17 @@
 }
 
 .welcome__wrapper img {
+  @media (max-width: 1365px) {
+    width: 490px;
+    height: 555px;
+    margin-top: 10px;
+  }
+
   @media (max-width: $vp-1199) {
     width: 324px;
     height: 390px;
+    object-fit: cover;
+    margin-top: 0;
   }
 
   @media (max-width: $vp-767) {

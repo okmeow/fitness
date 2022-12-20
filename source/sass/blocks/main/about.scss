@@ -18,8 +18,16 @@
   width: 100%;
   max-width: 1700px;
   margin: 0 auto;
-  padding: 120px 103px 235px 103px;
+  padding: 120px 7.54% 235px 7.54%;
   position: relative;
+
+  @media (min-width: 1367px) {
+    padding: 120px 103px 235px 103px;
+  }
+
+  @media (max-width: 1300px) {
+    padding: 120px 5.54% 235px 5.54%;
+  }
 
   @media (max-width: $vp-1199) {
     padding: 100px 45px 183px 45px;
@@ -33,21 +41,22 @@
 }
 
 .about__text-wrapper {
-  max-width: 355px;
+  width: 30.6%;
   margin: 40px 0 0 60px;
 
-  @media (min-width: 1550px) {
+  @media (min-width: 1580px) {
     max-width: 455px;
   }
 
   @media (max-width: $vp-1199) {
     align-self: center;
     text-align: center;
-    max-width: 502px;
+    width: 502px;
     margin: 0 0 35px 0;
   }
 
   @media (max-width: $vp-767) {
+    width: 258px;
     text-align: left;
     margin: 0 0 33px 0;
   }
@@ -78,7 +87,11 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  margin: 0 0 32px 0;
+  margin: 0 0 39px 0;
+
+  @media (max-width: $vp-1199) {
+    margin: 0 0 32px 0;
+  }
 
   @media (max-width: $vp-767) {
     margin: 0 0 27px 0;

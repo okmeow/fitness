@@ -131,6 +131,10 @@
   left: 50%;
   transform: translate(-50%, 0);
   color: #ffffff;
+
+  @media (max-width: $vp-1199) {
+    left: 51%;
+  }
 }
 
 .trainers__extra {
@@ -148,7 +152,8 @@
 
   @media (max-width: $vp-767) {
     width: 100%;
-    padding: 48px 33px 48px 33px;
+    height: 274px;
+    padding: 44px 25px 48px 25px;
   }
 }
 
