@@ -20,7 +20,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 70px 15px 70px 15px;
+    padding: 63px 15px 70px 15px;
   }
 }
 
@@ -43,6 +43,7 @@
   @media (max-width: $vp-767) {
     font-size: 32px;
     line-height: 38px;
+    font-weight: 600;
   }
 }
 
@@ -56,6 +57,12 @@
 
   @media (max-width: $vp-1199) {
     gap: 28px 55px;
+  }
+
+  @media (max-width: $vp-767) {
+    gap: 0;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -72,6 +79,10 @@
 
   @media (max-width: $vp-1199) {
     width: 100%;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 35px;
   }
 }
 
