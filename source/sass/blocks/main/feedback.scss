@@ -136,7 +136,11 @@
 .feedback__button--previous {
   transform: rotate(45deg);
   top: 268px;
-  left: 350px;
+  left: 25.7%;
+
+  @media (max-width: 1300px) {
+    left: 23%;
+  }
 
   @media (max-width: $vp-1199) {
     top: 240px;
@@ -152,7 +156,11 @@
 .feedback__button--next {
   transform: rotate(225deg);
   top: 268px;
-  left: 995px;
+  left: 72.8%;
+
+  @media (max-width: 1300px) {
+    left: 76%;
+  }
 
   @media (max-width: $vp-1199) {
     top: 240px;
