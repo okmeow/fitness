@@ -66,9 +66,9 @@ const defineMove = (evt) => {
 };
 
 const feedbackHandler = () => {
-  feedbackMessages.forEach((item) => item.addEventListener("touchmove", defineMove));
-  feedbackMessages.forEach((item) => item.addEventListener("touchstart", defineTouch));
-  feedbackMessages.forEach((item) => item.addEventListener("touchend", () => {
+  feedbackMessages.forEach((item) => item.addEventListener('touchmove', defineMove));
+  feedbackMessages.forEach((item) => item.addEventListener('touchstart', defineTouch));
+  feedbackMessages.forEach((item) => item.addEventListener('touchend', () => {
     setTimeout(() => {
       moved = !moved;
     }, END_SWIPE_TIMEOUT);

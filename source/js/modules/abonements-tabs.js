@@ -12,26 +12,26 @@ const abonnementListYear = document.querySelector('[data-abonnement="data-abonne
 
 const abonnementRadioButtonsHandler = () => {
   abonnementRadioButtonsList.classList.remove('abonnements__radio-list--nojs');
-  abonnementListYear.style.display = "none";
-  abonnementListHalfYear.style.display = "none";
+  abonnementListYear.style.display = 'none';
+  abonnementListHalfYear.style.display = 'none';
 
   abonnementRadioButtons.forEach((abonnementRadioButton) => abonnementRadioButton.addEventListener('click', () => {
-    abonnementListMonth.style.display = "none";
-    abonnementListHalfYear.style.display = "none";
-    abonnementListYear.style.display = "none";
+    abonnementListMonth.style.display = 'none';
+    abonnementListHalfYear.style.display = 'none';
+    abonnementListYear.style.display = 'none';
 
     if (abonnementRadioButtons[Abonnements.MONTH].checked) {
-    abonnementListMonth.style.display = "flex";
+      abonnementListMonth.style.display = 'flex';
     }
 
     if (abonnementRadioButtons[Abonnements.HALF_YEAR].checked) {
-    abonnementListHalfYear.style.display = "flex";
+      abonnementListHalfYear.style.display = 'flex';
     }
 
     if (abonnementRadioButtons[Abonnements.YEAR].checked) {
-    abonnementListYear.style.display = "flex";
+      abonnementListYear.style.display = 'flex';
     }
   }));
-}
+};
 
 export {abonnementRadioButtonsHandler};
