@@ -1,6 +1,6 @@
-const buttonVideoStart = document.querySelector('.about__video-button');
-const video = document.querySelector('.about__video');
-const videoCover = document.querySelector('.about__preview-video');
+const buttonVideoStart = document.querySelector('[data-video-button="data-video-button"]');
+const video = document.querySelector('[data-video="data-video"]');
+const videoCover = document.querySelector('[data-preview-video="data-preview-video"]');
 
 const buttonVideoStartHandler = () => {
   buttonVideoStart.addEventListener('click', () => {
