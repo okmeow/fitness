@@ -1,6 +1,10 @@
 // import {swiper} from '../vendor/swiper.js';
 
-// var swiper = new Swiper('.mySwiper', {
+// let swiperTrainers = new Swiper('.mySwiper', {
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   },
 //   slidesPerView: 4,
 //   slidesPerColumn: 1,
 //   spaceBetween: 30,
