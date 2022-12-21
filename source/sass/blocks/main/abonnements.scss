@@ -16,9 +16,11 @@
     top: 59.6%;
     left: calc(100vw - 287px);
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/abonnements-background@2x.png");
-      background-size: 287px 494px;
+    @media (min-width: 1200px) {
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/abonnements-background@2x.png");
+        background-size: 287px 494px;
+      }
     }
   }
 
@@ -31,9 +33,11 @@
       top: 82%;
       left: calc(100vw - 347px);
 
-      @media (min-resolution: 2dppx) {
-        background-image: url("../img/abonnements-background@2x.png");
-        background-size: 347px 444px;
+      @media (min-width: 768px) {
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/tablet/abonnements-background@2x.png");
+          background-size: 347px 444px;
+        }
       }
     }
   }
