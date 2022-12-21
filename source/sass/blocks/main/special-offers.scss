@@ -111,27 +111,27 @@
   padding: 35px 325px 45px 45px;
   color: #ffffff;
   max-width: 560px;
-  background-image: url("../img/special-offers-woman.jpg");
-  background-position: 100% 0;
+  background-image: url("../img/special-offers-woman.jpg"), linear-gradient(to right, #ed0233 50%, #4677e2 50%);
+  background-position: 100% 0, 100% 100%;
   background-repeat: no-repeat;
-  background-size: 280px 100%;
+  background-size: 280px 100%, 100% 100%;
 
   @media (min-width: 1200px) {
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/special-offers-woman@2x.jpg");
-      background-size: 280px 100%;
+      background-image: url("../img/special-offers-woman@2x.jpg"), linear-gradient(to right, #ed0233 50%, #4677e2 50%);
+      background-size: 280px 100%, 100% 100%;
     }
   }
 
   @media (max-width: $vp-1199) {
     max-width: 830px;
     padding: 35px 444px 45px 45px;
-    background-image: url("../img/tablet/special-offers-woman.jpg");
-    background-size: 399px 100%;
+    background-image: url("../img/tablet/special-offers-woman.jpg"), linear-gradient(to right, #ed0233 60%, #4677e2 60%);
+    background-size: 399px 100%, 100% 100%;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/tablet/special-offers-woman@2x.jpg");
-      background-size: 399px 100%;
+      background-image: url("../img/tablet/special-offers-woman@2x.jpg"), linear-gradient(to right, #ed0233 60%, #4677e2 60%);
+      background-size: 399px 100%, 100% 100%;
     }
   }
 
@@ -141,13 +141,13 @@
     text-align: center;
     margin: 0 auto;
     padding: 35px 45px 344px 45px;
-    background-image: url("../img/mobile/special-offers-woman.jpg");
-    background-size: 290px 299px;
-    background-position: 50% 100%;
+    background-image: url("../img/mobile/special-offers-woman.jpg"), linear-gradient(to bottom, #ed0233 50%, #4677e2 50%);
+    background-size: 290px 299px, 100% 100%;
+    background-position: 50% 100%, 100% 100%;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/mobile/special-offers-woman@2x.jpg");
-      background-size: 290px 299px;
+      background-image: url("../img/mobile/special-offers-woman@2x.jpg"), linear-gradient(to bottom, #ed0233 50%, #4677e2 50%);
+      background-size: 290px 299px, 100% 100%;
     }
   }
 }

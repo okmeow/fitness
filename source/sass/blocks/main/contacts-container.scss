@@ -3,4 +3,12 @@
   max-width: 2600px;
   display: flex;
   flex-wrap: wrap;
+
+  @media (max-width: $vp-1199) {
+    max-width: 1199px;
+  }
+
+  @media (max-width: $vp-767) {
+    max-width: 767px;
+  }
 }

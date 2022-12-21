@@ -115,6 +115,7 @@
   background-color: transparent;
   cursor: pointer;
   position: absolute;
+  user-select: none;
 
   @media (max-width: $vp-767) {
     width: 12px;

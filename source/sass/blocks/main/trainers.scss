@@ -164,6 +164,11 @@
 .trainers__item--8 {
   background-image: url("../img/trainer-4.jpg");
   display: none;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/trainer-4@2x.jpg");
+    background-size: 100% 100%;
+  }
 }
 
 .trainers__name {
@@ -302,6 +307,7 @@
   transform: rotate(225deg);
   top: 52%;
   left: 94.8%;
+  user-select: none;
 
   @media (max-width: $vp-1199) {
     top: 51%;

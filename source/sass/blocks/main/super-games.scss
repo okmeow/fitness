@@ -39,15 +39,15 @@
   color: #ffffff;
   width: 100%;
   padding: 85px 737px 87px 6.55%;
-  background-image: url("../img/super-games-man.jpg");
+  background-image: url("../img/super-games-man.jpg"), linear-gradient(to right, #ed0233 50%, #000147 50%);
   background-repeat: no-repeat;
-  background-position: 100% 0;
-  background-size: 56.89% 100%;
+  background-position: 100% 0, 100% 100%;
+  background-size: 56.89% 100%, 100% 100%;
 
   @media (min-width: 768px) {
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/super-games-man@2x.jpg");
-      background-size: 56.89% 100%;
+      background-image: url("../img/super-games-man@2x.jpg"), linear-gradient(to right, #ed0233 50%, #000147 50%);
+      background-size: 56.89% 100%, 100% 100%;
     }
   }
 
