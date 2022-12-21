@@ -182,7 +182,7 @@
   font-weight: 700;
   font-size: 71px;
   line-height: 69px;
-  background-image: linear-gradient(142.51deg, #d10a42 0%, #0041ca 31.33%);
+  background-image: linear-gradient(142.51deg, #d10a42 0%, #0041ca 47.33%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -195,6 +195,10 @@
   @media (max-width: $vp-767) {
     margin: 0 0 4px 0;
   }
+}
+
+.advantages__item-number--square {
+  background-image: linear-gradient(127.61deg, #D10A42 0%, #0041CA 35.58%);
 }
 
 .advantages__number-description {
