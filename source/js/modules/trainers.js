@@ -1,3 +1,11 @@
+// import {swiper} from '../vendor/swiper.js';
+
+// var swiper = new Swiper('.mySwiper', {
+//   slidesPerView: 4,
+//   slidesPerColumn: 1,
+//   spaceBetween: 30,
+// });
+
 const WidthHeightCardsConstants = {
   DESKTOP: 1.1307,
   TABLET: 1.097,
