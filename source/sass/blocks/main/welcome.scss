@@ -14,7 +14,7 @@
   }
 }
 
-.welcome__wrapper {
+.welcome > div {
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
@@ -53,7 +53,7 @@
   }
 }
 
-.welcome__city {
+.welcome__text-wrapper h3 {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 48px;
@@ -77,7 +77,7 @@
   }
 }
 
-.welcome__name {
+.welcome__text-wrapper p {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 92px;
@@ -101,7 +101,7 @@
   }
 }
 
-.welcome__link {
+.welcome__text-wrapper a {
   color: #ffffff;
   font-weight: 700;
   font-size: 12px;
@@ -160,7 +160,7 @@
   line-height: 21px;
 }
 
-.welcome__wrapper img {
+.welcome img {
   @media (max-width: 1365px) {
     width: 490px;
     height: 555px;

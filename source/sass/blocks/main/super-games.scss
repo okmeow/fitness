@@ -11,7 +11,7 @@
   }
 }
 
-.super-games__wrapper {
+.super-games > div {
   width: 100%;
   max-width: 1366px;
   display: flex;
@@ -89,7 +89,7 @@
   }
 }
 
-.super-games__title {
+.super-games__text-container h2 {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 82px;
@@ -174,7 +174,7 @@
   }
 }
 
-.super-games__description {
+.super-games__text-container > p {
   margin: 0 0 45px 0;
   font-size: 18px;
   line-height: 27px;
@@ -190,7 +190,7 @@
   }
 }
 
-.super-games__link {
+.super-games__text-container a {
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;

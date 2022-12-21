@@ -14,7 +14,7 @@
   }
 }
 
-.header__wrapper {
+.header > div {
   display: flex;
   flex-wrap: wrap;
   max-width: 1600px;
@@ -32,7 +32,7 @@
   }
 }
 
-.header__phone-link {
+.header__phone-wrapper a {
   color: #ffffff;
   font-weight: 600;
   font-size: 26px;

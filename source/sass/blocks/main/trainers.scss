@@ -11,7 +11,7 @@
   }
 }
 
-.trainers__wrapper {
+.trainers > div {
   width: 100%;
   max-width: 1900px;
   margin: 0 auto;
@@ -31,7 +31,7 @@
   }
 }
 
-.trainers__title {
+.trainers h2 {
   font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 54px;
@@ -254,7 +254,7 @@
 }
 
 
-.trainers__button {
+.trainers button {
   width: 23px;
   height: 23px;
   border: none;

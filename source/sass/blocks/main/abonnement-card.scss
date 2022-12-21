@@ -177,7 +177,7 @@
   color: #102654;
 }
 
-.abonnement-card__link {
+.abonnement-card a {
   display: block;
   font-weight: 700;
   font-size: 12px;
@@ -190,7 +190,7 @@
   user-select: none;
 }
 
-.abonnement-card:hover .abonnement-card__link {
+.abonnement-card:hover a {
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   color: #ffffff;
   border: 2px solid transparent;
@@ -198,10 +198,10 @@
   border-right: none;
 }
 
-.abonnement-card:hover .abonnement-card__link:hover {
+.abonnement-card:hover a:hover {
   color: #cacaca;
 }
 
-.abonnement-card:hover .abonnement-card__link:active {
+.abonnement-card:hover a:active {
   color: #102654;
 }
