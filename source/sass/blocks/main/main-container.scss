@@ -1,5 +1,7 @@
 .main-container {
   min-width: 1200px;
+  flex-grow: 1;
+  overflow-x: hidden;
 
   @media (max-width: $vp-1199) {
     min-width: 768px;

@@ -2,6 +2,7 @@
   width: 100vw;
   min-width: $vp-1200;
   background-color: #030a1a;
+  flex-shrink: 0;
 
   @media (max-width: $vp-1199) {
     min-width: 768px;
