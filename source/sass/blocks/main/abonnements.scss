@@ -170,9 +170,11 @@ input:checked ~ .abonnements__radio-text {
   margin: 0 0 10px 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
 
   @media (max-width: $vp-1199) {
     flex-direction: column;
+    flex-wrap: nowrap;
   }
 }
 
@@ -200,5 +202,11 @@ input:checked ~ .abonnements__radio-text {
 .abonnements__list .abonnements__item:nth-child(3n) {
   @media (min-width: 1200px) {
     margin-right: 0;
+  }
+}
+
+.abonnements__list .abonnements__item:nth-child(4n) {
+  @media (min-width: 1200px) {
+    margin-top: 20px;
   }
 }

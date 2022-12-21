@@ -32,6 +32,20 @@
   }
 }
 
+.header__phone-wrapper {
+  max-width: 155px;
+
+  @media (max-width: $vp-1199) {
+    display: flex;
+    max-width: 400px;
+  }
+
+  @media (max-width: $vp-767) {
+    display: block;
+    max-width: 120px;
+  }
+}
+
 .header__phone-wrapper a {
   color: #ffffff;
   font-weight: 600;
