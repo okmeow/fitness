@@ -11,10 +11,15 @@
     background-repeat: no-repeat;
     background-position: 0 0;
     width: 287px;
-    height: 415px;
+    height: 420px;
     position: absolute;
     top: 59.6%;
     left: calc(100vw - 287px);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/abonnements-background@2x.png");
+      background-size: 287px 494px;
+    }
   }
 
   @media (max-width: $vp-1199) {
@@ -22,9 +27,14 @@
 
     &::before {
       background-image: url("../img/tablet/abonnements-background.png");
-      width: 348px;
+      width: 347px;
       top: 82%;
-      left: calc(100vw - 348px);
+      left: calc(100vw - 347px);
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/abonnements-background@2x.png");
+        background-size: 347px 444px;
+      }
     }
   }
 
