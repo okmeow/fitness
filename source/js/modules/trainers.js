@@ -20,9 +20,9 @@ let swiperTrainers = new Swiper('.mySwiper', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-  slidesPerView: 4,
-  slidesPerColumn: 1,
-  spaceBetween: 20,
+  // slidesPerView: 4,
+  // slidesPerColumn: 1,
+  // spaceBetween: 20,
   // loop: true,
   direction: 'horizontal',
 
