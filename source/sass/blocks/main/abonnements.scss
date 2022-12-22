@@ -55,7 +55,11 @@
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 120px 103px 110px 103px;
+  padding: 120px 7.54% 110px 7.54%;
+
+  @media (min-width: 1367px) {
+    padding: 120px 103px 110px 103px;
+  }
 
   @media (max-width: $vp-1199) {
     padding: 102px 163px 90px 163px;
@@ -89,7 +93,7 @@
 
 .abonnements__radio-list {
   list-style-type: none;
-  margin: 0 0 38px 35.25%;
+  margin: 0 0 33px 35.25%;
   padding: 0 0 10px 0;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   width: 340px;
@@ -179,7 +183,7 @@ input:checked ~ .abonnements__radio-text {
 }
 
 .abonnements__item {
-  margin: 0 40px 0 0;
+  margin: 5px 3.44% 0 0;
   z-index: 2;
 
   @media (max-width: $vp-1199) {
@@ -202,11 +206,5 @@ input:checked ~ .abonnements__radio-text {
 .abonnements__list .abonnements__item:nth-child(3n) {
   @media (min-width: 1200px) {
     margin-right: 0;
-  }
-}
-
-.abonnements__list .abonnements__item:nth-child(4n) {
-  @media (min-width: 1200px) {
-    margin-top: 20px;
   }
 }
