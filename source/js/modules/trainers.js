@@ -22,14 +22,17 @@ const swiper = new Swiper('.mySwiper', {
     320: {
       slidesPerView: 1,
       spaceBetween: 20,
+      initialSlide: 2,
     },
     768: {
       slidesPerView: 2,
       spaceBetween: 30,
+      initialSlide: 2,
     },
     1200: {
       slidesPerView: 4,
       spaceBetween: 40,
+      initialSlide: 0,
     },
   },
 });
