@@ -1,6 +1,6 @@
 const feedbackMessages = document.querySelectorAll('[data-feedback-item="data-feedback-item"]');
-const feedbackButtonNext = document.querySelector('[data-feedback-button-next="data-feedback-button-next"]');
-const feedbackButtonPrevious = document.querySelector('[data-feedback-button-previous="data-feedback-button-previous"]');
+const feedbackButtonNextElement = document.querySelector('[data-feedback-button-next="data-feedback-button-next"]');
+const feedbackButtonPreviousElement = document.querySelector('[data-feedback-button-previous="data-feedback-button-previous"]');
 const SWIPE_MIN_DISTANCE = 70;
 const END_SWIPE_TIMEOUT = 200;
 let startPoint;
@@ -8,15 +8,15 @@ let moved = false;
 
 const buttonToggler = () => {
   if (feedbackMessages[0].classList.contains('feedback__item--active')) {
-    feedbackButtonPrevious.disabled = true;
+    feedbackButtonPreviousElement.disabled = true;
   } else {
-    feedbackButtonPrevious.disabled = false;
+    feedbackButtonPreviousElement.disabled = false;
   }
 
   if (feedbackMessages[feedbackMessages.length - 1].classList.contains('feedback__item--active')) {
-    feedbackButtonNext.disabled = true;
+    feedbackButtonNextElement.disabled = true;
   } else {
-    feedbackButtonNext.disabled = false;
+    feedbackButtonNextElement.disabled = false;
   }
 };
 
@@ -74,8 +74,8 @@ const feedbackHandler = () => {
     }, END_SWIPE_TIMEOUT);
   }));
 
-  feedbackButtonNext.addEventListener('click', nextSlideOn);
-  feedbackButtonPrevious.addEventListener('click', previousSlideOn);
+  feedbackButtonNextElement.addEventListener('click', nextSlideOn);
+  feedbackButtonPreviousElement.addEventListener('click', previousSlideOn);
 };
 
 export {feedbackHandler};

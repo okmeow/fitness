@@ -6,30 +6,30 @@ const Abonnements = {
 
 const abonnementRadioButtons = document.querySelectorAll('[data-radio="data-radio"]');
 const abonnementRadioButtonsList = document.querySelector('[data-radio-list="data-radio-list"]');
-const abonnementListMonth = document.querySelector('[data-abonnement="data-abonnement-month"]');
-const abonnementListHalfYear = document.querySelector('[data-abonnement="data-abonnement-half-year"]');
-const abonnementListYear = document.querySelector('[data-abonnement="data-abonnement-year"]');
+const abonnementListMonthElement = document.querySelector('[data-abonnement="data-abonnement-month"]');
+const abonnementListHalfYearElement = document.querySelector('[data-abonnement="data-abonnement-half-year"]');
+const abonnementListYearElement = document.querySelector('[data-abonnement="data-abonnement-year"]');
 
 const abonnementRadioButtonsHandler = () => {
   abonnementRadioButtonsList.classList.remove('abonnements__radio-list--nojs');
-  abonnementListYear.style.display = 'none';
-  abonnementListHalfYear.style.display = 'none';
+  abonnementListYearElement.style.display = 'none';
+  abonnementListHalfYearElement.style.display = 'none';
 
   abonnementRadioButtons.forEach((abonnementRadioButton) => abonnementRadioButton.addEventListener('click', () => {
-    abonnementListMonth.style.display = 'none';
-    abonnementListHalfYear.style.display = 'none';
-    abonnementListYear.style.display = 'none';
+    abonnementListMonthElement.style.display = 'none';
+    abonnementListHalfYearElement.style.display = 'none';
+    abonnementListYearElement.style.display = 'none';
 
     if (abonnementRadioButtons[Abonnements.MONTH].checked) {
-      abonnementListMonth.style.display = 'flex';
+      abonnementListMonthElement.style.display = 'flex';
     }
 
     if (abonnementRadioButtons[Abonnements.HALF_YEAR].checked) {
-      abonnementListHalfYear.style.display = 'flex';
+      abonnementListHalfYearElement.style.display = 'flex';
     }
 
     if (abonnementRadioButtons[Abonnements.YEAR].checked) {
-      abonnementListYear.style.display = 'flex';
+      abonnementListYearElement.style.display = 'flex';
     }
   }));
 };

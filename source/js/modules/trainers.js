@@ -1,7 +1,5 @@
 import Swiper, {Navigation} from 'swiper';
 
-// Изменение размеров карточки от ширины экрана (с сохранением пропорций)
-
 const WidthHeightCardsConstants = {
   DESKTOP: 1.1307,
   TABLET: 1.097,
@@ -19,12 +17,11 @@ const swiper = new Swiper('.mySwiper', {
 
   direction: 'horizontal',
   loop: true,
-  // autoHeight: true,
 
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 80,
+      spaceBetween: 20,
     },
     768: {
       slidesPerView: 2,
