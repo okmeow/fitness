@@ -3334,6 +3334,11 @@ input:checked ~ .abonnements__radio-text {
     background-image: url("../img/super-games-man@2x.jpg"), linear-gradient(to right, #ed0233 50%, #000147 50%);
     background-size: 56.89% 100%, 100% 100%;
   }
+
+  .feedback__item {
+    background-image: url("../img/feedback-avatar@2x.png");
+    background-size: 80px 80px;
+  }
 }
 
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -4657,6 +4662,11 @@ input:checked ~ .abonnements__radio-text {
     background-image: url("../img/mobile/special-offers-woman@2x.jpg"), -o-linear-gradient(top, #ed0233 50%, #4677e2 50%);
     background-image: url("../img/mobile/special-offers-woman@2x.jpg"), linear-gradient(to bottom, #ed0233 50%, #4677e2 50%);
     background-size: 290px 299px, 100% 100%;
+  }
+
+  .feedback__item {
+    background-image: url("../img/feedback-avatar@2x.png");
+    background-size: 68px 68px;
   }
 }
 

@@ -65,6 +65,13 @@
   background-repeat: no-repeat;
   background-position: 64px 62px;
 
+  @media (min-width: 768px) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/feedback-avatar@2x.png");
+      background-size: 80px 80px;
+    }
+  }
+
   @media (max-width: $vp-1199) {
     width: 566px;
     padding: 55px 60px 58px 172px;
@@ -75,6 +82,11 @@
     padding: 50px 25px 36px 25px;
     background-size: 68px 68px;
     background-position: 40px 40px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/feedback-avatar@2x.png");
+      background-size: 68px 68px;
+    }
   }
 }
 
