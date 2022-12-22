@@ -1,22 +1,26 @@
 .trainers {
   width: 100vw;
   min-width: $vp-1200;
+  padding: 0 0 12px 0;
 
   @media (max-width: $vp-1199) {
     min-width: 768px;
+    padding: 0 0 27px 0;
   }
 
   @media (max-width: $vp-767) {
     min-width: 320px;
+    padding: 0;
+    margin: 0 0 -55px 0;
   }
 }
 
 .trainers > div {
   width: 100%;
-  max-width: 1900px;
+  max-width: 1500px;
   height: 500px;
   margin: 0 auto;
-  padding: 15px 7.54% 90px 7.54%;
+  padding: 15px 7.54% 80px 7.54%;
   position: relative;
 
   @media (min-width: 1367px) {
@@ -24,6 +28,7 @@
   }
 
   @media (max-width: $vp-1199) {
+    max-width: 880px;
     padding: 50px 100px 100px 100px;
   }
 
@@ -58,21 +63,10 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  // overflow-x: hidden;
-  // display: flex;
-  // flex-wrap: wrap;
-
-  @media (max-width: $vp-767) {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 .trainers__item {
-  width: 22.41%;
-  min-width: 200px;
-  display: inline-block;
-  // min-height: 200px;
+  width: 25.41%;
   height: 294px;
   position: relative;
   background-color: #263b65;
@@ -89,30 +83,6 @@
     height: 274px;
   }
 }
-
-// .trainers__item:not(:last-child) {
-//   margin-right: 3.45%;
-
-//   @media (max-width: $vp-1199) {
-//     margin-right: 30px;
-//   }
-
-//   @media (max-width: $vp-767) {
-//     margin-right: 0;
-//   }
-// }
-
-// .trainers__item:nth-child(2n) {
-//   @media (max-width: $vp-1199) {
-//     margin-right: 0;
-//   }
-// }
-
-// .trainers__item:nth-child(4n) {
-//   @media (min-width: 1200px) {
-//     margin-right: 0;
-//   }
-// }
 
 .trainers__item--1 {
   background-image: url("../img/trainer-1.jpg");
@@ -240,10 +210,11 @@
   }
 }
 
-// .trainers__extra-item:not(:last-child) {
-//   margin: 0 0 13px 0;
-// }
-
+.trainers__extra-item:not(:last-child) {
+  @media (max-width: $vp-767) {
+    margin: 0 0 13px 0;
+  }
+}
 
 .trainers button {
   width: 23px;
@@ -254,6 +225,7 @@
   background-color: transparent;
   cursor: pointer;
   position: absolute;
+  z-index: 100;
 
   @media (max-width: $vp-767) {
     width: 12px;
@@ -284,12 +256,12 @@
   left: 3.7%;
 
   @media (max-width: $vp-1199) {
-    top: 51%;
+    top: 53%;
     left: 6.2%;
   }
 
   @media (max-width: $vp-767) {
-    top: 52%;
+    top: 47%;
     left: 5%;
   }
 }
@@ -301,12 +273,12 @@
   user-select: none;
 
   @media (max-width: $vp-1199) {
-    top: 51%;
+    top: 53%;
     left: 90.9%;
   }
 
   @media (max-width: $vp-767) {
-    top: 52%;
+    top: 47%;
     left: 90%;
   }
 }

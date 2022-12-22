@@ -1,46 +1,6 @@
-// import {swiper} from '../vendor/swiper.js';
-
-// let swiperTrainers = new Swiper('.mySwiper', {
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-//   slidesPerView: 4,
-//   slidesPerColumn: 1,
-//   spaceBetween: 30,
-// });
-
 import Swiper, {Navigation} from 'swiper';
 
-let swiperTrainers = new Swiper('.mySwiper', {
-
-  modules: [Navigation],
-
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  // slidesPerView: 4,
-  // slidesPerColumn: 1,
-  // spaceBetween: 20,
-  // loop: true,
-  direction: 'horizontal',
-
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 30,
-    },
-  },
-});
+// Изменение размеров карточки от ширины экрана (с сохранением пропорций)
 
 const WidthHeightCardsConstants = {
   DESKTOP: 1.1307,
@@ -48,51 +8,37 @@ const WidthHeightCardsConstants = {
   MOBILE: 1.2124,
 };
 
+const swiper = new Swiper('.mySwiper', {
+
+  modules: [Navigation],
+
+  navigation: {
+    nextEl: '.trainers__button--next',
+    prevEl: '.trainers__button--previous',
+  },
+
+  direction: 'horizontal',
+  loop: true,
+  // autoHeight: true,
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 80,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+  },
+});
+
 const trainerCardElements = document.querySelectorAll('[data-trainer-card="data-trainer-card"]');
 const trainerCardExtraElements = document.querySelectorAll('[data-trainer-extra="data-trainer-extra"]');
-// const trainersButtonNextElement = document.querySelector('[data-trainers-button-next="data-trainers-button-next"]');
-// const trainersButtonPreviousElement = document.querySelector('[data-trainers-button-previous="data-trainers-button-previous"]');
-
-// const nextCardOn = () => {
-//   for (let i = 0; i < trainerCardElements.length; i++) {
-//     if (trainerCardElements[i].classList.contains('trainers__item--last-visible')) {
-//       if (i === trainerCardElements.length - 1) {
-//         trainerCardElements[4].style.display = 'none';
-//         trainerCardElements[5].style.display = 'none';
-//         trainerCardElements[6].style.display = 'none';
-//         trainerCardElements[7].style.display = 'none';
-//         trainerCardElements[0].style.display = 'block';
-//         trainerCardElements[1].style.display = 'block';
-//         trainerCardElements[2].style.display = 'block';
-//         trainerCardElements[3].style.display = 'block';
-
-//         trainerCardElements[7].classList.remove('trainers__item--last-visible');
-//         trainerCardElements[3].classList.add('trainers__item--last-visible');
-//         setCardsSize();
-//         return;
-//       }
-//       if (i === 3) {
-//         trainerCardElements[4].style.display = 'block';
-//         trainerCardElements[5].style.display = 'block';
-//         trainerCardElements[6].style.display = 'block';
-//         trainerCardElements[7].style.display = 'block';
-//         trainerCardElements[0].style.display = 'none';
-//         trainerCardElements[1].style.display = 'none';
-//         trainerCardElements[2].style.display = 'none';
-//         trainerCardElements[3].style.display = 'none';
-
-//         trainerCardElements[7].classList.add('trainers__item--last-visible');
-//         trainerCardElements[3].classList.remove('trainers__item--last-visible');
-//         setCardsSize();
-//         return;
-//       }
-//     }
-//   }
-// };
-
-// trainersButtonNextElement.addEventListener('click', nextCardOn);
-
-// Изменение размеров карточки от ширины экрана (с сохранением пропорций)
 
 const setCardsSize = () => {
   for (let i = 0; i < trainerCardElements.length; i++) {
@@ -117,4 +63,4 @@ const cardsSizeHandler = () => {
   window.addEventListener('resize', setCardsSize);
 };
 
-export {cardsSizeHandler, swiperTrainers};
+export {cardsSizeHandler, swiper};
