@@ -14,8 +14,10 @@
 .trainers > div {
   width: 100%;
   max-width: 1900px;
+  height: 500px;
   margin: 0 auto;
   padding: 15px 7.54% 90px 7.54%;
+  // padding: 15px 0 90px 0;
   position: relative;
 
   @media (min-width: 1367px) {
@@ -58,7 +60,7 @@
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 
   @media (max-width: $vp-767) {
     flex-direction: column;
@@ -67,7 +69,9 @@
 }
 
 .trainers__item {
-  width: 22.41%;
+  // width: 22.41%;
+  // max-width: 260px;
+  width: 260px;
   min-height: 200px;
   height: 294px;
   position: relative;
@@ -86,29 +90,29 @@
   }
 }
 
-.trainers__item:not(:last-child) {
-  margin-right: 3.45%;
+// .trainers__item:not(:last-child) {
+//   margin-right: 3.45%;
 
-  @media (max-width: $vp-1199) {
-    margin-right: 30px;
-  }
+//   @media (max-width: $vp-1199) {
+//     margin-right: 30px;
+//   }
 
-  @media (max-width: $vp-767) {
-    margin-right: 0;
-  }
-}
+//   @media (max-width: $vp-767) {
+//     margin-right: 0;
+//   }
+// }
 
-.trainers__item:nth-child(2n) {
-  @media (max-width: $vp-1199) {
-    margin-right: 0;
-  }
-}
+// .trainers__item:nth-child(2n) {
+//   @media (max-width: $vp-1199) {
+//     margin-right: 0;
+//   }
+// }
 
-.trainers__item:nth-child(4n) {
-  @media (min-width: 1200px) {
-    margin-right: 0;
-  }
-}
+// .trainers__item:nth-child(4n) {
+//   @media (min-width: 1200px) {
+//     margin-right: 0;
+//   }
+// }
 
 .trainers__item--1 {
   background-image: url("../img/trainer-1.jpg");
@@ -163,7 +167,7 @@
 .trainers__item--7,
 .trainers__item--8 {
   background-image: url("../img/trainer-4.jpg");
-  display: none;
+  // display: none;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/trainer-4@2x.jpg");
@@ -249,9 +253,9 @@
   }
 }
 
-.trainers__extra-item:not(:last-child) {
-  margin: 0 0 13px 0;
-}
+// .trainers__extra-item:not(:last-child) {
+//   margin: 0 0 13px 0;
+// }
 
 
 .trainers button {
