@@ -143,6 +143,14 @@
   left: 50%;
   transform: translate(-50%, 0);
   color: #ffffff;
+
+  @media (max-width: $vp-1199) {
+    left: 51.5%;
+  }
+
+  @media (max-width: $vp-767) {
+    left: 50%;
+  }
 }
 
 .trainers__extra {
