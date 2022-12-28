@@ -176,6 +176,16 @@
   display: none;
 }
 
+.trainers__item:focus .trainers__extra {
+  display: block;
+  background-color: rgba(16, 38, 84, 0.89);
+  color: #ffffff;
+}
+
+.trainers__item:focus .trainers__name {
+  display: none;
+}
+
 .trainers__extra-name {
   margin: 0;
   font-weight: 700;

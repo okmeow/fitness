@@ -19,8 +19,6 @@ html {
   line-height: 22px;
   font-family: $ff-placeholder;
   color: $color-sapphire;
-  display: flex;
-  flex-direction: column;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -33,6 +31,8 @@ html {
 body {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 
   background-color: $color-default-white;
 }
