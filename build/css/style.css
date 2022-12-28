@@ -1694,7 +1694,7 @@ button,
 }
 
 .header__phone-wrapper {
-  max-width: 155px;
+  max-width: 160px;
 }
 
 .header__phone-wrapper a {
@@ -1704,6 +1704,8 @@ button,
   line-height: 31px;
   letter-spacing: 0.03em;
   font-family: "Alumni Sans", "Arial", sans-serif;
+  margin: 0 0 0 5px;
+  display: block;
 }
 
 .header__phone-wrapper a:hover {
@@ -3470,7 +3472,9 @@ input:checked ~ .abonnements__radio-text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 400px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 450px;
   }
 
   .header__phone-wrapper a {
@@ -3479,7 +3483,7 @@ input:checked ~ .abonnements__radio-text {
     line-height: 29px;
     letter-spacing: 0.02em;
     display: block;
-    margin-top: 5px;
+    margin: 5px 0 0 5px;
   }
 
   .header__logo {
@@ -4129,7 +4133,7 @@ input:checked ~ .abonnements__radio-text {
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.02em;
-    margin-top: 0;
+    margin: 0;
   }
 
   .header__logo-wrapper {

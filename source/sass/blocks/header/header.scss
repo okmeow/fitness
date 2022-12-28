@@ -33,11 +33,12 @@
 }
 
 .header__phone-wrapper {
-  max-width: 155px;
+  max-width: 160px;
 
   @media (max-width: $vp-1199) {
     display: flex;
-    max-width: 400px;
+    flex-wrap: wrap;
+    max-width: 450px;
   }
 
   @media (max-width: $vp-767) {
@@ -53,6 +54,8 @@
   line-height: 31px;
   letter-spacing: 0.03em;
   font-family: "Alumni Sans", "Arial", sans-serif;
+  margin: 0 0 0 5px;
+  display: block;
 
   @media (max-width: $vp-1199) {
     font-weight: 700;
@@ -60,7 +63,7 @@
     line-height: 29px;
     letter-spacing: 0.02em;
     display: block;
-    margin-top: 5px;
+    margin: 5px 0 0 5px;
   }
 
   @media (max-width: $vp-767) {
@@ -68,7 +71,7 @@
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.02em;
-    margin-top: 0;
+    margin: 0;
   }
 
   &:hover {
