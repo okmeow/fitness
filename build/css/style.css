@@ -2902,8 +2902,8 @@ input:checked ~ .abonnements__radio-text {
   width: 23px;
   height: 23px;
   border: none;
-  border-bottom: 2px solid #afafaf;
-  border-left: 2px solid #afafaf;
+  border-bottom: 1px solid #afafaf;
+  border-left: 1px solid #afafaf;
   background-color: transparent;
   cursor: pointer;
   position: absolute;
@@ -2914,20 +2914,20 @@ input:checked ~ .abonnements__radio-text {
 }
 
 .feedback__button:hover {
-  border-bottom: 2px solid #1c3374;
-  border-left: 2px solid #1c3374;
+  border-bottom: 1px solid #1c3374;
+  border-left: 1px solid #1c3374;
 }
 
 .feedback__button:active {
-  border-bottom: 2px solid #1c3374;
-  border-left: 2px solid #1c3374;
+  border-bottom: 1px solid #1c3374;
+  border-left: 1px solid #1c3374;
   opacity: 0.5;
 }
 
 .feedback__button:disabled {
   cursor: default;
-  border-bottom: 2px solid #e6e6e6;
-  border-left: 2px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
 }
 
 .feedback__button--previous {
@@ -4358,7 +4358,7 @@ input:checked ~ .abonnements__radio-text {
   .trainers {
     min-width: 320px;
     padding: 0;
-    margin: 0 0 -55px 0;
+    margin: 0;
   }
 
   .trainers > div {
@@ -4570,7 +4570,7 @@ input:checked ~ .abonnements__radio-text {
   }
 
   .feedback__button {
-    width: 12px;
+    width: 14px;
     height: 14px;
   }
 
