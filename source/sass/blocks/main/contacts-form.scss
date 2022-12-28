@@ -5,16 +5,19 @@
   @media (max-width: $vp-1199) {
     width: 100%;
     min-width: 768px;
+    max-width: 1199px;
   }
 
   @media (max-width: $vp-767) {
     min-width: 320px;
+    max-width: 767px;
   }
 }
 
 .contacts-form__wrapper {
   padding: 56px 170px 69px 103px;
   background-color: #102654;
+  margin: 0 auto;
 
   @media (max-width: $vp-1199) {
     padding: 60px 163px 70px 133px;

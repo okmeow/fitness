@@ -2,10 +2,12 @@
   width: 50%;
   max-width: 683px;
   background-color: #ffffff;
+  margin: 0 auto;
 
   @media (max-width: $vp-1199) {
     width: 100%;
     min-width: 768px;
+    max-width: 1199px;
   }
 
   @media (max-width: $vp-767) {
@@ -17,8 +19,8 @@
   padding: 56px 80px 63px 120px;
 
   @media (max-width: $vp-1199) {
-    border: none;
     padding: 60px 102px 64px 132px;
+    margin: 0 auto;
   }
 
   @media (max-width: $vp-767) {

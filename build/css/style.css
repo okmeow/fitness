@@ -2929,7 +2929,7 @@ input:checked ~ .abonnements__radio-text {
   background: -webkit-gradient(linear, left top, right top, color-stop(50%, #102654), color-stop(50%, #ffffff));
   background: -o-linear-gradient(left, #102654 50%, #ffffff 50%);
   background: linear-gradient(to right, #102654 50%, #ffffff 50%);
-  border-top: 1px solid #74819c;
+  border-top: 1px solid #102654;
 }
 
 .contacts-container__wrapper {
@@ -2951,6 +2951,7 @@ input:checked ~ .abonnements__radio-text {
 .contacts-form__wrapper {
   padding: 56px 170px 69px 103px;
   background-color: #102654;
+  margin: 0 auto;
 }
 
 .contacts-form__wrapper h2 {
@@ -3038,6 +3039,7 @@ input:checked ~ .abonnements__radio-text {
   width: 50%;
   max-width: 683px;
   background-color: #ffffff;
+  margin: 0 auto;
 }
 
 .contacts div {
@@ -3944,14 +3946,20 @@ input:checked ~ .abonnements__radio-text {
     left: 90.9%;
   }
 
+  .contacts-container {
+    background: none;
+    border: none;
+  }
+
   .contacts-container__wrapper {
     max-width: 1199px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .contacts-form {
     width: 100%;
     min-width: 768px;
+    max-width: 1199px;
   }
 
   .contacts-form__wrapper {
@@ -3976,11 +3984,12 @@ input:checked ~ .abonnements__radio-text {
   .contacts {
     width: 100%;
     min-width: 768px;
+    max-width: 1199px;
   }
 
   .contacts div {
-    border: none;
     padding: 60px 102px 64px 132px;
+    margin: 0 auto;
   }
 
   .contacts h2 {
@@ -4544,6 +4553,7 @@ input:checked ~ .abonnements__radio-text {
 
   .contacts-form {
     min-width: 320px;
+    max-width: 767px;
   }
 
   .contacts-form__wrapper {
