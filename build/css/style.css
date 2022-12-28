@@ -4551,7 +4551,8 @@ input:checked ~ .abonnements__radio-text {
   }
 
   .feedback__item {
-    width: 226px;
+    width: 100%;
+    max-width: 400px;
     padding: 50px 25px 36px 25px;
     background-size: 68px 68px;
     background-position: 40px 40px;
@@ -4560,6 +4561,7 @@ input:checked ~ .abonnements__radio-text {
   .feedback__name {
     margin: 0 0 20px 100px;
     line-height: 26px;
+    max-width: 100px;
   }
 
   .feedback__description {
@@ -4573,13 +4575,13 @@ input:checked ~ .abonnements__radio-text {
   }
 
   .feedback__button--previous {
-    top: 255px;
+    top: 51%;
     left: 5%;
   }
 
   .feedback__button--next {
-    top: 255px;
-    left: 90%;
+    top: 51%;
+    left: 95%;
   }
 
   .contacts-container__wrapper {
