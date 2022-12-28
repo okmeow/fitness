@@ -1877,7 +1877,7 @@ button,
 
 .about__video {
   position: absolute;
-  top: 54%;
+  top: 408px;
   left: 39.5%;
   border: none;
   display: none;
@@ -1894,7 +1894,7 @@ button,
   background-position: 50% 50%, 100% 100%, 0 0;
   background-size: 100px 100px, 100% 100%, 100% 100%;
   position: absolute;
-  top: 54%;
+  top: 408px;
   left: 39.5%;
 }
 
