@@ -37,10 +37,11 @@
 
 .footer-navigation__list--first {
   margin: 0 40px 0 auto;
+  max-width: 153px;
 
   @media (max-width: $vp-1199) {
     margin: 0 30px 0 auto;
-    max-width: 150px;
+    max-width: 143px;
   }
 
   @media (max-width: $vp-767) {
@@ -50,8 +51,10 @@
 }
 
 .footer-navigation__list:last-child {
+  max-width: 236px;
+
   @media (max-width: $vp-1199) {
-    max-width: 220px;
+    max-width: 216px;
   }
 
   @media (max-width: $vp-767) {
@@ -90,6 +93,14 @@
   @media (max-width: $vp-767) {
     margin: 0 0 19px 0;
   }
+}
+
+.footer-navigation__list--first .footer-navigation__item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.footer-navigation__list:last-child .footer-navigation__item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .footer-navigation img {

@@ -3258,6 +3258,11 @@ input:checked ~ .abonnements__radio-text {
 
 .footer-navigation__list--first {
   margin: 0 40px 0 auto;
+  max-width: 153px;
+}
+
+.footer-navigation__list:last-child {
+  max-width: 236px;
 }
 
 .footer-navigation__item a {
@@ -3277,6 +3282,14 @@ input:checked ~ .abonnements__radio-text {
 
 .footer-navigation__item:not(:last-child) {
   margin-right: 40px;
+}
+
+.footer-navigation__list--first .footer-navigation__item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.footer-navigation__list:last-child .footer-navigation__item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .footer-navigation img {
@@ -4070,11 +4083,11 @@ input:checked ~ .abonnements__radio-text {
 
   .footer-navigation__list--first {
     margin: 0 30px 0 auto;
-    max-width: 150px;
+    max-width: 143px;
   }
 
   .footer-navigation__list:last-child {
-    max-width: 220px;
+    max-width: 216px;
   }
 
   .footer-navigation__item:not(:last-child) {
