@@ -93,7 +93,7 @@
 
 .abonnements__radio-list {
   list-style-type: none;
-  margin: 0 0 33px 35.25%;
+  margin: 0 0 13px 35.25%;
   padding: 0 0 10px 0;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   width: 340px;
@@ -183,7 +183,7 @@ input:checked ~ .abonnements__radio-text {
 }
 
 .abonnements__item {
-  margin: 5px 3.44% 0 0;
+  margin: 25px 3.44% 0 0;
   z-index: 2;
 
   @media (max-width: $vp-1199) {
