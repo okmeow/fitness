@@ -1,5 +1,6 @@
 .contacts-form {
   width: 50%;
+  max-width: 683px;
 
   @media (max-width: $vp-1199) {
     width: 100%;

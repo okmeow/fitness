@@ -1,5 +1,7 @@
 .contacts {
   width: 50%;
+  max-width: 683px;
+  background-color: #ffffff;
 
   @media (max-width: $vp-1199) {
     width: 100%;
@@ -13,7 +15,6 @@
 
 .contacts div {
   padding: 56px 80px 63px 120px;
-  border-top: 1px solid #74819c;
 
   @media (max-width: $vp-1199) {
     border: none;

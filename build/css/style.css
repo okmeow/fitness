@@ -1684,7 +1684,7 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  max-width: 1600px;
+  max-width: 1366px;
   margin: 0 auto;
   width: 100%;
   padding: 30px 103px 10px 103px;
@@ -1832,7 +1832,7 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
-  max-width: 1700px;
+  max-width: 1366px;
   margin: 0 auto;
   padding: 120px 7.54% 235px 7.54%;
   position: relative;
@@ -2298,8 +2298,7 @@ input:checked ~ .abonnements__radio-text {
 
 .trainers > div {
   width: 100%;
-  max-width: 1500px;
-  height: 500px;
+  max-width: 1366px;
   margin: 0 auto;
   padding: 15px 7.54% 80px 7.54%;
   position: relative;
@@ -2488,7 +2487,7 @@ input:checked ~ .abonnements__radio-text {
 
 .advantages div {
   width: 100%;
-  max-width: 1700px;
+  max-width: 1366px;
   margin: 0 auto;
   padding: 146px 11.78% 83px 12.08%;
 }
@@ -2670,7 +2669,7 @@ input:checked ~ .abonnements__radio-text {
 
 .special-offers > div {
   width: 100%;
-  max-width: 1700px;
+  max-width: 1366px;
   margin: 0 auto;
   padding: 150px 103px 60px 103px;
 }
@@ -2927,8 +2926,16 @@ input:checked ~ .abonnements__radio-text {
 }
 
 .contacts-container {
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #102654), color-stop(50%, #ffffff));
+  background: -o-linear-gradient(left, #102654 50%, #ffffff 50%);
+  background: linear-gradient(to right, #102654 50%, #ffffff 50%);
+  border-top: 1px solid #74819c;
+}
+
+.contacts-container__wrapper {
+  margin: 0 auto;
   width: 100%;
-  max-width: 2600px;
+  max-width: 1366px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2938,6 +2945,7 @@ input:checked ~ .abonnements__radio-text {
 
 .contacts-form {
   width: 50%;
+  max-width: 683px;
 }
 
 .contacts-form__wrapper {
@@ -3028,11 +3036,12 @@ input:checked ~ .abonnements__radio-text {
 
 .contacts {
   width: 50%;
+  max-width: 683px;
+  background-color: #ffffff;
 }
 
 .contacts div {
   padding: 56px 80px 63px 120px;
-  border-top: 1px solid #74819c;
 }
 
 .contacts h2 {
@@ -3185,7 +3194,7 @@ input:checked ~ .abonnements__radio-text {
 
 .footer > div {
   width: 100%;
-  max-width: 1600px;
+  max-width: 1366px;
   margin: 0 auto;
   padding: 44px 104px 42px 103px;
   display: -webkit-box;
@@ -3935,8 +3944,9 @@ input:checked ~ .abonnements__radio-text {
     left: 90.9%;
   }
 
-  .contacts-container {
+  .contacts-container__wrapper {
     max-width: 1199px;
+    margin: 0;
   }
 
   .contacts-form {
@@ -4528,7 +4538,7 @@ input:checked ~ .abonnements__radio-text {
     left: 90%;
   }
 
-  .contacts-container {
+  .contacts-container__wrapper {
     max-width: 767px;
   }
 
