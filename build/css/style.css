@@ -3164,6 +3164,8 @@ input:checked ~ .abonnements__radio-text {
 
 .contacts__definition--email a {
   color: #102654;
+  display: block;
+  max-width: 115px;
 }
 
 .contacts__definition--email a:hover {
@@ -3176,6 +3178,8 @@ input:checked ~ .abonnements__radio-text {
 
 .contacts__definition--phone a {
   color: #102654;
+  display: block;
+  max-width: 110px;
 }
 
 .contacts__definition--phone a:hover {
@@ -4019,6 +4023,14 @@ input:checked ~ .abonnements__radio-text {
 
   .contacts__definition--address {
     margin: 0 0 14px 0;
+  }
+
+  .contacts__definition--email a {
+    max-width: 155px;
+  }
+
+  .contacts__definition--phone a {
+    max-width: 135px;
   }
 
   .footer {

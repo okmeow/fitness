@@ -162,6 +162,12 @@
 
 .contacts__definition--email a {
   color: #102654;
+  display: block;
+  max-width: 115px;
+
+  @media (max-width: $vp-1199) {
+    max-width: 155px;
+  }
 
   &:hover {
     color: #395183;
@@ -174,6 +180,12 @@
 
 .contacts__definition--phone a {
   color: #102654;
+  display: block;
+  max-width: 110px;
+
+  @media (max-width: $vp-1199) {
+    max-width: 135px;
+  }
 
   &:hover {
     color: #395183;
