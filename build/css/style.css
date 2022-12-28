@@ -3643,7 +3643,7 @@ input:checked ~ .abonnements__radio-text {
   }
 
   .abonnements__radio-list {
-    margin: 0 10px 44px 50px;
+    margin: 0 10px 44px 25%;
     padding: 0 0 10px 5px;
   }
 
@@ -4114,6 +4114,18 @@ input:checked ~ .abonnements__radio-text {
   }
 }
 
+@media (max-width: 1050px) {
+  .abonnements__radio-list {
+    margin: 0 10px 44px 20%;
+  }
+}
+
+@media (max-width: 800px) {
+  .abonnements__radio-list {
+    margin: 0 10px 44px 50px;
+  }
+}
+
 @media (max-width: 767px) {
   .modal__wrapper {
     padding: 60px 16px;
@@ -4282,7 +4294,7 @@ input:checked ~ .abonnements__radio-text {
   }
 
   .abonnements__radio-list {
-    margin: 0 auto 33px auto;
+    margin: 0 auto 33px 25%;
     padding: 0 0 13px 0;
     width: 290px;
   }
@@ -4744,6 +4756,24 @@ input:checked ~ .abonnements__radio-text {
   .feedback__item {
     background-image: url("../img/feedback-avatar@2x.png");
     background-size: 68px 68px;
+  }
+}
+
+@media (max-width: 550px) {
+  .abonnements__radio-list {
+    margin: 0 auto 33px 18%;
+  }
+}
+
+@media (max-width: 450px) {
+  .abonnements__radio-list {
+    margin: 0 auto 33px 11%;
+  }
+}
+
+@media (max-width: 350px) {
+  .abonnements__radio-list {
+    margin: 0 auto 33px auto;
   }
 }
 
