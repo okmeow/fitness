@@ -1956,7 +1956,7 @@ button,
   font-size: 54px;
   line-height: 65px;
   letter-spacing: 0.03em;
-  margin: 0 0 18px 0;
+  margin: 0 0 3px 0;
   text-align: center;
 }
 
@@ -1965,10 +1965,11 @@ button,
   margin: 0 0 13px 35.25%;
   padding: 0 0 10px 0;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
-  width: 340px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .abonnements__radio-list--nojs {
@@ -1976,7 +1977,15 @@ button,
 }
 
 .abonnements__radio-item:not(:last-child) {
-  margin: 0 46px 0 0;
+  margin-right: 46px;
+}
+
+.abonnements__radio-item {
+  margin-top: 15px;
+}
+
+.abonnements__radio-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .abonnements__radio-control {
@@ -3613,16 +3622,16 @@ input:checked ~ .abonnements__radio-text {
   .abonnements h2 {
     font-size: 42px;
     line-height: 50px;
-    margin: 0 11px 20px 0;
+    margin: 0 11px 5px 0;
   }
 
   .abonnements__radio-list {
-    margin: 0 auto 44px auto;
+    margin: 0 10px 44px 50px;
     padding: 0 0 10px 5px;
   }
 
   .abonnements__radio-item:not(:last-child) {
-    margin: 0 54px 0 0;
+    margin-right: 54px;
   }
 
   .abonnements__radio-text {
@@ -4262,7 +4271,7 @@ input:checked ~ .abonnements__radio-text {
   }
 
   .abonnements__radio-item:not(:last-child) {
-    margin: 0 45px 0 0;
+    margin-right: 45px;
   }
 
   .abonnements__radio-text {
