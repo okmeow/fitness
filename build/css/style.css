@@ -3778,7 +3778,7 @@ input:checked ~ .abonnements__radio-text {
 
   .trainers > div {
     max-width: 880px;
-    padding: 50px 100px 100px 100px;
+    padding: 50px 100px 73px 100px;
   }
 
   .trainers h2 {
@@ -3801,12 +3801,12 @@ input:checked ~ .abonnements__radio-text {
   }
 
   .trainers__button--previous {
-    top: 53%;
+    top: 51%;
     left: 6.2%;
   }
 
   .trainers__button--next {
-    top: 53%;
+    top: 51%;
     left: 90.9%;
   }
 
@@ -4374,7 +4374,6 @@ input:checked ~ .abonnements__radio-text {
 
   .trainers__item {
     width: 100%;
-    max-width: 450px;
     height: 274px;
   }
 
@@ -4397,12 +4396,12 @@ input:checked ~ .abonnements__radio-text {
   }
 
   .trainers__button--previous {
-    top: 47%;
+    top: 52%;
     left: 5%;
   }
 
   .trainers__button--next {
-    top: 47%;
+    top: 52%;
     left: 90%;
   }
 
@@ -4441,7 +4440,7 @@ input:checked ~ .abonnements__radio-text {
   }
 
   .advantages__item--parking {
-    padding: 0 0 48px 0;
+    padding: 0 0 45px 0;
   }
 
   .advantages__item--comfort {

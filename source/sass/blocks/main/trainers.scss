@@ -28,7 +28,7 @@
 
   @media (max-width: $vp-1199) {
     max-width: 880px;
-    padding: 50px 100px 100px 100px;
+    padding: 50px 100px 73px 100px;
   }
 
   @media (max-width: $vp-767) {
@@ -79,7 +79,6 @@
 
   @media (max-width: $vp-767) {
     width: 100%;
-    max-width: 450px;
     height: 274px;
   }
 }
@@ -280,12 +279,12 @@
   left: 3.7%;
 
   @media (max-width: $vp-1199) {
-    top: 53%;
+    top: 51%;
     left: 6.2%;
   }
 
   @media (max-width: $vp-767) {
-    top: 47%;
+    top: 52%;
     left: 5%;
   }
 }
@@ -297,12 +296,12 @@
   user-select: none;
 
   @media (max-width: $vp-1199) {
-    top: 53%;
+    top: 51%;
     left: 90.9%;
   }
 
   @media (max-width: $vp-767) {
-    top: 47%;
+    top: 52%;
     left: 90%;
   }
 }
