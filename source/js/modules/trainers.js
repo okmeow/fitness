@@ -64,6 +64,7 @@ const cardsSizeHandler = () => {
   setCardsSize();
   window.addEventListener('resize', setCardsSize);
   document.addEventListener('mouseover', setCardsSize);
+  document.addEventListener('scroll', setCardsSize);
 };
 
 const isTabKey = (evt) => evt.key === 'Tab';
