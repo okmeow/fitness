@@ -3,7 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {abonnementRadioButtonsHandler} from './modules/abonements-tabs.js';
 import {buttonVideoStartHandler} from './modules/video.js';
 import {feedbackHandler} from './modules/feedback-swiper.js';
-import {cardsSizeHandler} from './modules/trainers.js';
+import {cardsSizeHandler, trainersFocusHandler} from './modules/trainers.js';
 
 // ---------------------------------
 
@@ -21,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   buttonVideoStartHandler();
   feedbackHandler();
   cardsSizeHandler();
+  trainersFocusHandler();
 
   window.addEventListener('load', () => {
     initModals();

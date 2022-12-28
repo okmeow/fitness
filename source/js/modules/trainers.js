@@ -39,6 +39,8 @@ const swiper = new Swiper('.mySwiper', {
 
 const trainerCardElements = document.querySelectorAll('[data-trainer-card="data-trainer-card"]');
 const trainerCardExtraElements = document.querySelectorAll('[data-trainer-extra="data-trainer-extra"]');
+const superGamesButtonElement = document.querySelector('[data-super-games-button="data-super-games-button"]');
+const trainerButtonPrevElement = document.querySelector('[data-trainer-button="data-trainer-button"]');
 
 const setCardsSize = () => {
   for (let i = 0; i < trainerCardElements.length; i++) {
@@ -63,4 +65,77 @@ const cardsSizeHandler = () => {
   window.addEventListener('resize', setCardsSize);
 };
 
-export {cardsSizeHandler, swiper};
+const isTabKey = (evt) => evt.key === 'Tab';
+
+const trainersFocusHandler = () => {
+  if (window.innerWidth >= 1200) {
+    superGamesButtonElement.addEventListener('keydown', (evt) => {
+      if (isTabKey(evt)) {
+        evt.preventDefault();
+        document.querySelector('.swiper-slide-active').focus();
+      }
+    });
+
+    trainerCardElements[7].addEventListener('keydown', (evt) => {
+      if (isTabKey(evt)) {
+        evt.preventDefault();
+        trainerButtonPrevElement.focus();
+      }
+    });
+
+    trainerButtonPrevElement.addEventListener('keydown', (evt) => {
+      if (evt.shiftKey && isTabKey(evt)) {
+        evt.preventDefault();
+        superGamesButtonElement.focus();
+      }
+    });
+  }
+
+  if (window.innerWidth <= 1199 && window.innerWidth >= 768) {
+    superGamesButtonElement.addEventListener('keydown', (evt) => {
+      if (isTabKey(evt)) {
+        evt.preventDefault();
+        document.querySelector('.swiper-slide-active').focus();
+      }
+    });
+
+    trainerCardElements[5].addEventListener('keydown', (evt) => {
+      if (isTabKey(evt)) {
+        evt.preventDefault();
+        trainerButtonPrevElement.focus();
+      }
+    });
+
+    trainerButtonPrevElement.addEventListener('keydown', (evt) => {
+      if (evt.shiftKey && isTabKey(evt)) {
+        evt.preventDefault();
+        superGamesButtonElement.focus();
+      }
+    });
+  }
+
+  if (window.innerWidth <= 767) {
+    superGamesButtonElement.addEventListener('keydown', (evt) => {
+      if (isTabKey(evt)) {
+        evt.preventDefault();
+        document.querySelector('.swiper-slide-active').focus();
+      }
+    });
+
+    trainerCardElements[3].addEventListener('keydown', (evt) => {
+      if (isTabKey(evt)) {
+        evt.preventDefault();
+        trainerButtonPrevElement.focus();
+      }
+    });
+
+    trainerButtonPrevElement.addEventListener('keydown', (evt) => {
+      if (evt.shiftKey && isTabKey(evt)) {
+        evt.preventDefault();
+        superGamesButtonElement.focus();
+      }
+    });
+  }
+};
+
+export {cardsSizeHandler, trainersFocusHandler, swiper};
