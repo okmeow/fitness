@@ -158,7 +158,7 @@
   }
 
   @media (max-width: $vp-767) {
-    top: 49%;
+    top: 50%;
     left: 2.5%;
   }
 }
@@ -182,7 +182,22 @@
   }
 
   @media (max-width: 430px) {
-    top: 49%;
-    left: 88%;
+    top: 50%;
+    left: 90%;
+  }
+}
+
+
+.feedback__button-icon--tablet {
+  @media (max-width: $vp-767) {
+    display: none;
+  }
+}
+
+.feedback__button-icon--mobile {
+  display: none;
+
+  @media (max-width: $vp-767) {
+    display: inline;
   }
 }

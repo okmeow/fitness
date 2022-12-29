@@ -2455,8 +2455,7 @@ input:checked ~ .abonnements__radio-text {
   width: 23px;
   height: 23px;
   border: none;
-  border-bottom: 2px solid #afafaf;
-  border-left: 2px solid #afafaf;
+  color: #afafaf;
   background-color: transparent;
   cursor: pointer;
   position: absolute;
@@ -2464,40 +2463,35 @@ input:checked ~ .abonnements__radio-text {
 }
 
 .trainers button:hover {
-  border-bottom: 2px solid #1c3374;
-  border-left: 2px solid #1c3374;
+  color: #1c3374;
 }
 
 .trainers button:active {
-  border-bottom: 2px solid #1c3374;
-  border-left: 2px solid #1c3374;
+  color: #1c3374;
   opacity: 0.5;
 }
 
 .trainers button:disabled {
   cursor: default;
-  border-bottom: 2px solid #e6e6e6;
-  border-left: 2px solid #e6e6e6;
+  color: #e6e6e6;
 }
 
 .trainers__button--previous {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  top: 52%;
-  left: 3.7%;
+  top: 51%;
+  left: 3%;
 }
 
 .trainers__button--next {
-  -webkit-transform: rotate(225deg);
-  -ms-transform: rotate(225deg);
-  transform: rotate(225deg);
-  top: 52%;
+  top: 51%;
   left: 94.8%;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.trainers__button-icon--mobile {
+  display: none;
 }
 
 .advantages {
@@ -2933,6 +2927,10 @@ input:checked ~ .abonnements__radio-text {
 .feedback__button--next {
   top: 260px;
   left: 72.8%;
+}
+
+.feedback__button-icon--mobile {
+  display: none;
 }
 
 .contacts-container {
@@ -3809,12 +3807,12 @@ input:checked ~ .abonnements__radio-text {
   }
 
   .trainers__button--previous {
-    top: 51%;
-    left: 6.2%;
+    top: 52%;
+    left: 5%;
   }
 
   .trainers__button--next {
-    top: 51%;
+    top: 52%;
     left: 90.9%;
   }
 
@@ -4414,19 +4412,22 @@ input:checked ~ .abonnements__radio-text {
     margin: 0;
   }
 
-  .trainers button {
-    width: 12px;
-    height: 14px;
-  }
-
   .trainers__button--previous {
-    top: 52%;
-    left: 5%;
+    top: 51%;
+    left: 3%;
   }
 
   .trainers__button--next {
-    top: 52%;
+    top: 51%;
     left: 90%;
+  }
+
+  .trainers__button-icon--tablet {
+    display: none;
+  }
+
+  .trainers__button-icon--mobile {
+    display: inline;
   }
 
   .advantages {
@@ -4593,13 +4594,21 @@ input:checked ~ .abonnements__radio-text {
   }
 
   .feedback__button--previous {
-    top: 49%;
+    top: 50%;
     left: 2.5%;
   }
 
   .feedback__button--next {
     top: 49%;
     left: 92%;
+  }
+
+  .feedback__button-icon--tablet {
+    display: none;
+  }
+
+  .feedback__button-icon--mobile {
+    display: inline;
   }
 
   .contacts-container__wrapper {
@@ -4777,8 +4786,8 @@ input:checked ~ .abonnements__radio-text {
 
 @media (max-width: 430px) {
   .feedback__button--next {
-    top: 49%;
-    left: 88%;
+    top: 50%;
+    left: 90%;
   }
 }
 
