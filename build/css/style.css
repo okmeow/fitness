@@ -3294,10 +3294,6 @@ input:checked ~ .abonnements__radio-text {
   color: #6999ff;
 }
 
-.footer-navigation__list--tablet .footer-navigation__item:nth-child(5n) {
-  margin-right: 0;
-}
-
 .footer-navigation__item:not(:last-child) {
   margin-right: 40px;
 }
