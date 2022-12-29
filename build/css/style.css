@@ -3242,6 +3242,9 @@ input:checked ~ .abonnements__radio-text {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 795px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .footer-navigation__list {
@@ -3261,8 +3264,19 @@ input:checked ~ .abonnements__radio-text {
   max-width: 153px;
 }
 
-.footer-navigation__list:last-child {
+.footer-navigation__list--second {
   max-width: 236px;
+}
+
+.footer-navigation__list--mobile {
+  display: none;
+}
+
+.footer-navigation__list--tablet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 429px;
 }
 
 .footer-navigation__item a {
@@ -3280,16 +3294,12 @@ input:checked ~ .abonnements__radio-text {
   color: #6999ff;
 }
 
+.footer-navigation__list--tablet .footer-navigation__item:nth-child(5n) {
+  margin-right: 0;
+}
+
 .footer-navigation__item:not(:last-child) {
   margin-right: 40px;
-}
-
-.footer-navigation__list--first .footer-navigation__item:nth-child(2n) {
-  margin-right: 0;
-}
-
-.footer-navigation__list:last-child .footer-navigation__item:nth-child(3n) {
-  margin-right: 0;
 }
 
 .footer-navigation img {
@@ -4086,8 +4096,12 @@ input:checked ~ .abonnements__radio-text {
     max-width: 143px;
   }
 
-  .footer-navigation__list:last-child {
+  .footer-navigation__list--second {
     max-width: 216px;
+  }
+
+  .footer-navigation__list--tablet {
+    max-width: 389px;
   }
 
   .footer-navigation__item:not(:last-child) {
@@ -4677,7 +4691,7 @@ input:checked ~ .abonnements__radio-text {
   }
 
   .footer > div {
-    padding: 50px 60px 50px 15px;
+    padding: 50px 65px 50px 15px;
     max-width: 500px;
     margin: 0;
   }
@@ -4712,9 +4726,19 @@ input:checked ~ .abonnements__radio-text {
     max-width: 85px;
   }
 
-  .footer-navigation__list:last-child {
+  .footer-navigation__list--second {
     margin-top: -42px;
     max-width: 80px;
+  }
+
+  .footer-navigation__list--mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .footer-navigation__list--tablet {
+    display: none;
   }
 
   .footer-navigation__item a {
