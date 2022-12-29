@@ -124,59 +124,47 @@
   width: 23px;
   height: 23px;
   border: none;
-  border-bottom: 1px solid #afafaf;
-  border-left: 1px solid #afafaf;
   background-color: transparent;
+  color: #afafaf;
   cursor: pointer;
   position: absolute;
   user-select: none;
 
-  @media (max-width: $vp-767) {
-    width: 14px;
-    height: 14px;
-  }
-
   &:hover {
-    border-bottom: 1px solid #1c3374;
-    border-left: 1px solid #1c3374;
+    color: #1c3374;
   }
 
   &:active {
-    border-bottom: 1px solid #1c3374;
-    border-left: 1px solid #1c3374;
     opacity: 0.5;
   }
 
   &:disabled {
     cursor: default;
-    border-bottom: 1px solid #e6e6e6;
-    border-left: 1px solid #e6e6e6;
+    color: #e6e6e6;
   }
 }
 
 .feedback__button--previous {
-  transform: rotate(45deg);
-  top: 268px;
-  left: 25.7%;
+  top: 260px;
+  left: 25%;
 
   @media (max-width: 1300px) {
     left: 23%;
   }
 
   @media (max-width: $vp-1199) {
-    top: 240px;
-    left: 6.2%;
+    top: 233px;
+    left: 5%;
   }
 
   @media (max-width: $vp-767) {
-    top: 51%;
-    left: 5%;
+    top: 49%;
+    left: 2.5%;
   }
 }
 
 .feedback__button--next {
-  transform: rotate(225deg);
-  top: 268px;
+  top: 260px;
   left: 72.8%;
 
   @media (max-width: 1300px) {
@@ -184,12 +172,17 @@
   }
 
   @media (max-width: $vp-1199) {
-    top: 240px;
+    top: 233px;
     left: 90.9%;
   }
 
   @media (max-width: $vp-767) {
-    top: 51%;
-    left: 90%;
+    top: 49%;
+    left: 92%;
+  }
+
+  @media (max-width: 430px) {
+    top: 49%;
+    left: 88%;
   }
 }

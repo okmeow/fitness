@@ -2902,9 +2902,8 @@ input:checked ~ .abonnements__radio-text {
   width: 23px;
   height: 23px;
   border: none;
-  border-bottom: 1px solid #afafaf;
-  border-left: 1px solid #afafaf;
   background-color: transparent;
+  color: #afafaf;
   cursor: pointer;
   position: absolute;
   -webkit-user-select: none;
@@ -2914,35 +2913,25 @@ input:checked ~ .abonnements__radio-text {
 }
 
 .feedback__button:hover {
-  border-bottom: 1px solid #1c3374;
-  border-left: 1px solid #1c3374;
+  color: #1c3374;
 }
 
 .feedback__button:active {
-  border-bottom: 1px solid #1c3374;
-  border-left: 1px solid #1c3374;
   opacity: 0.5;
 }
 
 .feedback__button:disabled {
   cursor: default;
-  border-bottom: 1px solid #e6e6e6;
-  border-left: 1px solid #e6e6e6;
+  color: #e6e6e6;
 }
 
 .feedback__button--previous {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  top: 268px;
-  left: 25.7%;
+  top: 260px;
+  left: 25%;
 }
 
 .feedback__button--next {
-  -webkit-transform: rotate(225deg);
-  -ms-transform: rotate(225deg);
-  transform: rotate(225deg);
-  top: 268px;
+  top: 260px;
   left: 72.8%;
 }
 
@@ -3983,12 +3972,12 @@ input:checked ~ .abonnements__radio-text {
   }
 
   .feedback__button--previous {
-    top: 240px;
-    left: 6.2%;
+    top: 233px;
+    left: 5%;
   }
 
   .feedback__button--next {
-    top: 240px;
+    top: 233px;
     left: 90.9%;
   }
 
@@ -4603,19 +4592,14 @@ input:checked ~ .abonnements__radio-text {
     line-height: 140%;
   }
 
-  .feedback__button {
-    width: 14px;
-    height: 14px;
-  }
-
   .feedback__button--previous {
-    top: 51%;
-    left: 5%;
+    top: 49%;
+    left: 2.5%;
   }
 
   .feedback__button--next {
-    top: 51%;
-    left: 90%;
+    top: 49%;
+    left: 92%;
   }
 
   .contacts-container__wrapper {
@@ -4788,6 +4772,13 @@ input:checked ~ .abonnements__radio-text {
 @media (max-width: 450px) {
   .abonnements__radio-list {
     margin: 0 auto 33px 11%;
+  }
+}
+
+@media (max-width: 430px) {
+  .feedback__button--next {
+    top: 49%;
+    left: 88%;
   }
 }
 
