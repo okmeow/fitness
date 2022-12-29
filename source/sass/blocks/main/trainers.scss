@@ -32,7 +32,7 @@
   }
 
   @media (max-width: $vp-767) {
-    max-width: 460px;
+    max-width: 600px;
     padding: 22px 47px 68px 47px;
   }
 }
@@ -290,6 +290,11 @@
   }
 
   @media (max-width: $vp-767) {
+    top: 51%;
+    left: 95%;
+  }
+
+  @media (max-width: 500px) {
     top: 51%;
     left: 90%;
   }

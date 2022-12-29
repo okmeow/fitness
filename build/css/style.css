@@ -4384,7 +4384,7 @@ input:checked ~ .abonnements__radio-text {
   }
 
   .trainers > div {
-    max-width: 460px;
+    max-width: 600px;
     padding: 22px 47px 68px 47px;
   }
 
@@ -4419,7 +4419,7 @@ input:checked ~ .abonnements__radio-text {
 
   .trainers__button--next {
     top: 51%;
-    left: 90%;
+    left: 95%;
   }
 
   .trainers__button-icon--tablet {
@@ -4775,6 +4775,13 @@ input:checked ~ .abonnements__radio-text {
 @media (max-width: 550px) {
   .abonnements__radio-list {
     margin: 0 auto 33px 18%;
+  }
+}
+
+@media (max-width: 500px) {
+  .trainers__button--next {
+    top: 51%;
+    left: 90%;
   }
 }
 
